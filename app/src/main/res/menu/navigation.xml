@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_draw"
+        android:icon="@drawable/ic_pen_24"
+        android:title="draw" />
+
+    <item
+        android:id="@+id/navigation_erase"
+        android:icon="@drawable/ic_erase_24"
+        android:title="erase" />
+
+</menu>

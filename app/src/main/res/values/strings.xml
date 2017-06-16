@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DrawPadAndEPubReader</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_signup">Sign up</string>
+    <string name="title_activity_objsetting">Remote DB Setting</string>
+    <!--<string name="title_activity_settings">Remote DB Setting</string>-->
+
+    <!-- Strings related to login -->
+
+    <!-- Strings related to Settings -->
+
+    <string name="addItem">ADD</string>
+    <string name="epub_list">EPub List</string>
+    <string name="drawnote_list">DrawNote List</string>
+    <string name="title_activity_draw_pad">DrawPad</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="select_image_to_open">Select image to open</string>
+    <string name="saved_your_location_to">Saved your artwork to %1$s</string>
+
+</resources>
