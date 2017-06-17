@@ -41,11 +41,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DrawPadActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DrawPadActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/DrawPadActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
               <caret line="463" column="17" selection-start-line="463" selection-start-column="17" selection-end-line="463" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -3816,6 +3829,38 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawPadAndEPubReader_android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawpadandepubreader" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrawPadAndEPubReader_android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="manifests" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
@@ -3890,6 +3935,281 @@
       <recent name="$PROJECT_DIR$/colorpickerlib/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/colorpickerlib/src/main/res/layout" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/taskArtifacts/fileHashes.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/taskArtifacts/fileSnapshots.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/taskArtifacts/taskArtifacts.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/taskArtifacts/taskArtifacts.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_colorpickerlib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_colorpickerlib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_colorpickerlib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_colorpickerlib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_sectionlib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_sectionlib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_sectionlib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.gradle/3.3/tasks/_sectionlib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/compiler.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/copyright/profiles_settings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/gradle.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/animated_vector_drawable_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/appcompat_v7_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/cardview_v7_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/constraint_layout_1_0_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/constraint_layout_solver_1_0_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/design_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/espresso_core_2_2_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/espresso_idling_resource_2_2_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/hamcrest_core_1_3.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/hamcrest_integration_1_3.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/hamcrest_library_1_3.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/javawriter_2_1_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/javax_annotation_api_1_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/javax_inject_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/jsr305_2_0_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/junit_4_12.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/okhttp_3_4_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/okio_1_9_0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/realm_android_library_object_server_3_2_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/realm_annotations_3_2_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/recyclerview_v7_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/relinker_1_2_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/rules_0_5.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/runner_0_5.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/support_annotations_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/support_compat_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/support_core_ui_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/support_core_utils_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/support_fragment_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/support_media_compat_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/support_v4_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/support_vector_drawable_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/libraries/transition_25_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/modules.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/runConfigurations.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/vcs.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/DrawPadAndEPubReader_android.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/app.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/proguard-rules.pro</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/androidTest/java/com/hosung/drawpadandepubreader/ExampleInstrumentedTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/AndroidManifest.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/assets/epub/The Silver Chair.epub</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/assets/epub/The Silver Chair.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/DrawPadActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/DrawPadAndEPubApplication.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/LoginActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/MainActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/ObjSvrSettingActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/SignupActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/models/DrawNote.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/models/DrawPath.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/models/DrawPoint.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/models/UserProfile.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/sensor/ShakeSensorEventListener.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/util/Places.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/java/com/hosung/drawpadandepubreader/util/UriHelper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/anim/push_left_in.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/anim/push_left_out.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/btn_list_add.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/ic_dashboard_black_24dp.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/ic_erase_24.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/ic_erase_all_24.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/ic_home_black_24dp.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/ic_notifications_black_24dp.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/ic_pen_128.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/ic_pen_24.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/drawable/mylogo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/activity_draw_pad.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/activity_login.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/activity_main.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/activity_obj_svr_setting.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/activity_signup.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/dlg_brushsize.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/dlg_save.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/list_header.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/layout/list_item.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/menu/menu_drawpad.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/menu/menu_main.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/menu/navigation.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-hdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-hdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-mdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-mdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-xhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-xxhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/values/arrays.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/values/colors.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/values/dimens.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/values/strings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/main/res/values/styles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/app/src/test/java/com/hosung/drawpadandepubreader/ExampleUnitTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/build/android-profile/profile-2017-06-16-18-14-39-212.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/colorpickerlib.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/proguard-rules.pro</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/androidTest/java/hosung/colorpickerlib/ExampleInstrumentedTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/AndroidManifest.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/java/hosung/colorpickerlib/ColorPal.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/java/hosung/colorpickerlib/ColorPicker.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/java/hosung/colorpickerlib/ColorViewAdapter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/java/hosung/colorpickerlib/CustomDialog.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/drawable/bg_button_normal.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/drawable/bg_button_pressed.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/drawable/button.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/drawable/round_button.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/layout/color_palette_layout.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/layout/palette_item.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/values/colorpicker-array.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/values/colorpicker-colors.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/values/dimens.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/values/strings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/main/res/values/styles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/colorpickerlib/src/test/java/hosung/colorpickerlib/ExampleUnitTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/gradle.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/gradlew</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/gradlew.bat</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/local.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/proguard-rules.pro</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/sectionlib.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/src/androidTest/java/hosung/setionlibrary/ExampleInstrumentedTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/src/main/AndroidManifest.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/src/main/java/hosung/setionlibrary/Section.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/src/main/java/hosung/setionlibrary/SectionedRecyclerViewAdapter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/src/main/java/hosung/setionlibrary/StatelessSection.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/src/main/res/values/strings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/sectionlib/src/test/java/hosung/setionlibrary/ExampleUnitTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/settings.gradle</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -4236,17 +4556,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25931928" sideWeight="0.5354523" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34341908" sideWeight="0.52593195" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34341908" sideWeight="0.52917343" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39788198" sideWeight="0.4643436" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34341908" sideWeight="0.47406808" order="3" side_tool="false" content_ui="tabs" x="343" y="302" width="597" height="218" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34341908" sideWeight="0.47082657" order="3" side_tool="false" content_ui="tabs" x="343" y="302" width="597" height="218" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -4600,17 +4920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -4689,6 +4998,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="463" column="17" selection-start-line="463" selection-start-column="17" selection-end-line="463" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
         </state>
       </provider>
