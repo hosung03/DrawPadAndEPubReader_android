@@ -36,10 +36,11 @@ This is my personal project for implementing Android iOS applications with sever
   * Create an other user for your service 
   
   * My configuration is :
+  <pre><code>
     public static String realmServerIP = "127.0.0.1"; // your Realm Object Server IP
     public static String realmID = "demo@localhost.io"; // your Login ID of the Realm Object Server
     public static String realmPasswd = "demo1234"; // your Login Password of the Realm Object Server
     
     static final String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad1";
     static final String syncAuthURL = "http://"+realmServerIP+":9080/auth";
-
+  </code></pre>
