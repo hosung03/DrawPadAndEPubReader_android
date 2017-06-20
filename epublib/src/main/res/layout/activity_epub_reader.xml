@@ -20,7 +20,7 @@
         android:layout_height="match_parent"
         android:visibility="visible">
         <hosung.epublib.DirectionalViewpager
-            android:id="@+id/EPubPageViewPager"
+            android:id="@+id/epubPageViewPager"
             android:layout_width="match_parent"
             app:direction="vertical"
             android:layout_height="match_parent">

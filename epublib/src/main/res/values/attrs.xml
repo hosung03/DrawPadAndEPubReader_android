@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--<declare-styleable name="StyleableTextView">-->
-        <!--<attr name="font" format="string"/>-->
-    <!--</declare-styleable>-->
+    <!--For StyleableTextView-->
+    <declare-styleable name="StyleableTextView">
+        <attr name="font" format="string"/>
+    </declare-styleable>
 
     <!--For DirectionalViewpager-->
     <declare-styleable name="DirectionalViewpager">

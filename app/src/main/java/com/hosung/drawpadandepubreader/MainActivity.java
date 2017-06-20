@@ -1,9 +1,14 @@
 package com.hosung.drawpadandepubreader;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -240,7 +245,8 @@ public class MainActivity extends AppCompatActivity {
                         EPubItem ePubItem = (EPubItem) list.get(position);
 
                         Intent intent = new Intent(MainActivity.this, EPubReaderActivity.class);
-                        intent.putExtra("FileName",ePubItem.getFileName());
+                        intent.putExtra("EPubFilePath", ePubItem.getFileName());
+                        intent.putExtra("EPubSourceType", EPubReaderActivity.EpubSourceType.ASSESTS);
                         startActivityForResult(intent, REQUEST_EPUBREAD);
                     } else if (title.equals(getString(R.string.drawnote_list))) {
                         DrawNoteItem drawNoteItem = (DrawNoteItem) list.get(position);

@@ -7,46 +7,144 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba31facc-188a-4a55-b74c-bdc2dd910fbb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/epublib.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/androidTest/java/hosung/epublib/ExampleInstrumentedTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/DirectionalViewpager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubReaderActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/activity_epub_reader.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/test/java/hosung/epublib/ExampleUnitTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/realm_android_library_object_server_3_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/realm_annotations_3_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-06-20-03-09-07-145.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-06-20-03-09-58-456.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-06-20-03-10-07-284.rawproto" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/colors_marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/ic_action_discard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/ic_action_share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/ic_blue_marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/ic_green_marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/ic_pink_marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/ic_underline_marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/ic_yellow_marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/icon_font_big.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/icon_font_small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/icon_moon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/icon_moon_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/icon_moon_sel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/icon_sun.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/icon_sun_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/icon_sun_sel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/next_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/prev_con.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/seekbar_thumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/text_select_handle_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi/text_select_handle_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/epublib_core_latest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/otto_1_3_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_android_1_6_1_RC1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/AudioViewBottomSheetDailogFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/ConfigBottomSheetDialogFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/Constants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubPageFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubPageFragmentAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/ObservableWebView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/StyleableTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/UnderlinedTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/VerticalSeekbar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/io/DaisyFileHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/io/ExtractXMLEncoding.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/io/ExtractXmlEncodingTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/io/XmlFormatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/io/XmlFormatterTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/io/XmlWriterTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/BookModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/Highlight.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/ReloadData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/RewindIndex.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/Sentence.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/SmilElements.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/WebViewPosition.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/quickaction/ActionItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/quickaction/PopupWindows.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/quickaction/QuickAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/AudioElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/ContainerElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/MediaElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/ParallelElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/SequenceElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/SmilElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/SmilFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/SmilParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/TextElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/TextLocator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragLayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DropTarget.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/MyAbsoluteLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/TextSelectionControlListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/TextSelectionController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/TextSelectionSupport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/AppUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/DummyDtdResolver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/EpubManipulator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/FileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/SharedPreferenceUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/UiUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/disappear.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/fadein.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/fadeout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/grow_from_bottom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/grow_from_bottomleft_to_topright.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/grow_from_bottomright_to_topleft.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/grow_from_top.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/grow_from_topleft_to_bottomright.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/grow_from_topright_to_bottomleft.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/pump_bottom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/pump_top.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/shrink_from_bottom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/shrink_from_bottomleft_to_topright.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/shrink_from_bottomright_to_topleft.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/shrink_from_top.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/shrink_from_topleft_to_bottomright.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/anim/shrink_from_topright_to_bottomleft.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable/btn_moon_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/drawable/btn_sun_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/action_item_horizontal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/action_item_vertical.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/fragment_epub_page.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/horiz_separator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/popup_horizontal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/popup_vertical.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/selection_drag_layer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/view_audio_player.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/view_config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epublib/src/main/res/values/colors.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/sensor/ShakeSensorEventListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-06-20-13-51-56-142.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-06-20-13-56-21-814.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-06-20-13-56-26-549.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-06-20-13-57-04-602.rawproto" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_colorpickerlib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_colorpickerlib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_colorpickerlib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_colorpickerlib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_epublib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_sectionlib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_sectionlib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_sectionlib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_sectionlib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/colorpickerlib/colorpickerlib.iml" afterPath="$PROJECT_DIR$/colorpickerlib/colorpickerlib.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epublib/build.gradle" afterPath="$PROJECT_DIR$/epublib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epublib/epublib.iml" afterPath="$PROJECT_DIR$/epublib/epublib.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubReaderActivity.java" afterPath="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubReaderActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epublib/src/main/res/layout/activity_epub_reader.xml" afterPath="$PROJECT_DIR$/epublib/src/main/res/layout/activity_epub_reader.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epublib/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/epublib/src/main/res/values/attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epublib/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/epublib/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epublib/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/epublib/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sectionlib/sectionlib.iml" afterPath="$PROJECT_DIR$/sectionlib/sectionlib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="DrawPadAndEPubReader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,85 +175,7 @@
     <favorites_list name="DrawPadAndEPubReader" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3441">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="40" />
-              <folding>
-                <element signature="e#3516#3545#0" expanded="true" />
-                <element signature="e#3617#3650#0" expanded="true" />
-                <element signature="e#4711#4740#0" expanded="true" />
-                <element signature="e#4812#4845#0" expanded="true" />
-                <element signature="e#8194#8223#0" expanded="true" />
-                <element signature="e#8763#8796#0" expanded="true" />
-                <element signature="e#9592#9625#0" expanded="true" />
-                <element signature="e#10163#10196#0" expanded="true" />
-                <element signature="class#HeaderViewHolder#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#ItemViewHolder#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#ListItem#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#EPubItem#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#DrawNoteItem#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#createInitialDataIfNeeded#0;class#MainActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectionalViewpager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/DirectionalViewpager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epublib/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epublib/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="attrs.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epublib/src/main/res/values/attrs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -2808,6 +2828,11 @@
                 <option name="name" value="processReleaseUnitTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:design:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/epublib" />
+                <option name="name" value="prepareComAndroidSupportDesign2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/epublib" />
                 <option name="name" value="javaPreCompileDebugAndroidTest" />
               </ExternalTaskPojo>
@@ -2822,6 +2847,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/epublib" />
                 <option name="name" value="mergeReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:transition:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/epublib" />
+                <option name="name" value="prepareComAndroidSupportTransition2531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/epublib" />
@@ -2940,6 +2970,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/epublib" />
                 <option name="name" value="javaPreCompileReleaseUnitTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/epublib" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-core-ui:25.3.1" />
@@ -4042,7 +4077,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="8984112320000" />
+        <entry key="$PROJECT_DIR$" value="8984122681000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -4703,35 +4738,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/sectionlib/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/epub_list_header.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_header.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/sensor/ShakeSensorEventListener.java" />
-        <option value="$PROJECT_DIR$/colorpickerlib/src/main/java/hosung/colorpickerlib/ColorViewAdapter.java" />
-        <option value="$PROJECT_DIR$/colorpickerlib/build.gradle" />
-        <option value="$PROJECT_DIR$/colorpickerlib/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_draw_pad2.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/DrawPadActivity2.java" />
-        <option value="$PROJECT_DIR$/colorpickerlib/src/main/res/values/colorpicker-colors.xml" />
-        <option value="$PROJECT_DIR$/colorpickerlib/src/main/res/values/colorpicker-array.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/util/RealmAutoIncrement.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_obj_svr_setting.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/util/RealmResultSync.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/navigation.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_optmenu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_draw_pad.xml" />
-        <option value="$PROJECT_DIR$/colorpickerlib/src/main/java/hosung/colorpickerlib/ColorPicker.java" />
-        <option value="$PROJECT_DIR$/colorpickerlib/src/main/res/layout/color_palette_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/util/Places.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/dlg_save.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_drawpad.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/models/DrawPath.java" />
@@ -4741,19 +4747,48 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/models/DrawNote.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/ObjSvrSettingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/sensor/DirectionalViewpager.java" />
-        <option value="$PROJECT_DIR$/epublib/src/main/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/DrawPadActivity.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/SignupActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/LoginActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/epublib/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubReaderActivity.java" />
         <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/DirectionalViewpager.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/Constants.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/EpubManipulator.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/SharedPreferenceUtil.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/AppUtil.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/DummyDtdResolver.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/SmilParser.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/TextLocator.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/io/DaisyFileHandler.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/smil/SmilFile.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/MainActivity.java" />
         <option value="$PROJECT_DIR$/epublib/src/main/res/layout/activity_epub_reader.xml" />
+        <option value="$PROJECT_DIR$/epublib/src/main/res/layout/fragment_epub_page.xml" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubPageFragmentAdapter.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/ObservableWebView.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/VerticalSeekbar.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/util/UiUtil.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/StyleableTextView.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/Config.java" />
+        <option value="$PROJECT_DIR$/epublib/build.gradle" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/BookModel.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/TextSelectionController.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/AudioViewBottomSheetDailogFragment.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/quickaction/QuickAction.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/ConfigBottomSheetDialogFragment.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubReaderActivity.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/epublib/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubPageFragment.java" />
+        <option value="$PROJECT_DIR$/epublib/src/main/res/layout/selection_drag_layer.xml" />
+        <option value="$PROJECT_DIR$/epublib/src/main/res/layout/view_audio_player.xml" />
+        <option value="$PROJECT_DIR$/epublib/src/main/res/layout/view_config.xml" />
+        <option value="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/TextSelectionSupport.java" />
       </list>
     </option>
   </component>
@@ -4807,58 +4842,6 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawPadAndEPubReader_android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epublib" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawPadAndEPubReader_android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epublib" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawPadAndEPubReader_android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epublib" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epublib" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrawPadAndEPubReader_android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="ProjectPane">
@@ -4897,7 +4880,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="a910436e" />
     <property name="OverrideImplement.combined" value="false" />
-    <property name="last_opened_file_path" value="/JavaPrj/DrawPadAndEPubReader" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi" />
     <property name="android.project.structure.last.selected" value="epublib" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -4920,15 +4903,16 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hosung.epublib" />
+      <recent name="hosung.epublib.util" />
       <recent name="com.hosung.drawpadandepubreader.sensor" />
       <recent name="com.hosung.drawpadandepubreader" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/epublib/src/main/res/values" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="$PROJECT_DIR$/colorpickerlib/src/main/res/values" />
-      <recent name="$PROJECT_DIR$/colorpickerlib/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/colorpickerlib/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/epublib/src/main/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/epublib/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/epublib/src/main/res/anim" />
+      <recent name="$PROJECT_DIR$/epublib/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/epublib/src/main/java/hosung/epublib" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -5283,23 +5267,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.493517" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25931928" sideWeight="0.5354523" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34039333" sideWeight="0.5421394" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39788198" sideWeight="0.45786062" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267776" sideWeight="0.5032415" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39788198" sideWeight="0.45786062" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.493517" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34039333" sideWeight="0.45786062" order="3" side_tool="false" content_ui="tabs" x="343" y="302" width="597" height="218" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34039333" sideWeight="0.45786062" order="3" side_tool="false" content_ui="tabs" x="343" y="302" width="597" height="218" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28200972" sideWeight="0.46454766" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30794165" sideWeight="0.46454766" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267776" sideWeight="0.49675852" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34602916" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -5312,7 +5297,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -5395,418 +5379,473 @@
           <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="116" />
+      <option name="time" value="118" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/util/UriHelper.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/models/DrawPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/models/UserProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library-object-server/3.2.1/a62c275c57dc1ada0478a0c5fae2a269799ff567/realm-android-library-object-server-3.2.1-sources.jar!/io/realm/ErrorCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/models/DrawNote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/models/DrawPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/sensor/DirectionalViewpager.java" />
-    <entry file="file://$PROJECT_DIR$/sectionlib/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/Sentence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sectionlib/src/main/java/hosung/setionlibrary/StatelessSection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/src/main/java/hosung/colorpickerlib/ColorPal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="73" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/Highlight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/WebViewPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/ReloadData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/RewindIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/SmilElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/model/BookModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DropTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/MyAbsoluteLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/DragListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/build/intermediates/bundles/default/res/layout/fragment_epub_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/anim/fadein.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/ObservableWebView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/AudioViewBottomSheetDailogFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sectionlib/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/epub/The Silver Chair.epub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/src/main/res/values/colorpicker-colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="27" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/src/main/res/values/colorpicker-array.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/src/main/res/layout/palette_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/src/main/res/layout/color_palette_layout.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_drawpad.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/SignupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="188" selection-end-column="1" />
+        <state relative-caret-position="-45">
+          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
           <folding>
-            <element signature="e#1623#1765#0" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
-            <element signature="e#1806#2162#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#12153#12169#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/ObjSvrSettingActivity.java">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/quickaction/PopupWindows.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/DrawPadActivity.java">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/quickaction/ActionItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="228" column="28" selection-start-line="228" selection-start-column="28" selection-end-line="228" selection-end-column="28" />
+        <state relative-caret-position="15">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/DrawPadAndEPubApplication.java">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/layout/popup_horizontal.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="77">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/layout/popup_vertical.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/layout/action_item_horizontal.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/layout/horiz_separator.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/quickaction/QuickAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="381" column="57" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/drawable/btn_moon_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/ConfigBottomSheetDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/src/main/java/hosung/colorpickerlib/ColorViewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/UnderlinedTextView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/src/main/java/hosung/colorpickerlib/ColorPicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sectionlib/src/main/java/hosung/setionlibrary/Section.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sectionlib/src/main/java/hosung/setionlibrary/SectionedRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="62" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epublib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sectionlib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorpickerlib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="android-dummy:///GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/Translations Editor">
-      <provider selected="true" editor-type-id="string-resource-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/DirectionalViewpager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="37" column="91" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/epublib/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="319">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/epublib/src/main/res/values/attrs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/epublib/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/StyleableTextView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#213#231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/layout/activity_epub_reader.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubReaderActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/epublib/build/intermediates/bundles/default/res/layout/view_audio_player.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="138">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hosung/drawpadandepubreader/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/anim/shrink_from_bottom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3441">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/anim/shrink_from_bottomleft_to_topright.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/anim/grow_from_bottom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/view_config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/anim/grow_from_top.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/anim/disappear.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/anim/pump_bottom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/build/intermediates/res/merged/release/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="805" column="50" selection-start-line="805" selection-start-column="50" selection-end-line="805" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/TextSelectionControlListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/TextSelectionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/DirectionalViewpager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
           <folding>
-            <element signature="e#3516#3545#0" expanded="true" />
-            <element signature="e#3617#3650#0" expanded="true" />
-            <element signature="e#4711#4740#0" expanded="true" />
-            <element signature="e#4812#4845#0" expanded="true" />
-            <element signature="e#8194#8223#0" expanded="true" />
-            <element signature="e#8763#8796#0" expanded="true" />
-            <element signature="e#9592#9625#0" expanded="true" />
-            <element signature="e#10163#10196#0" expanded="true" />
-            <element signature="class#HeaderViewHolder#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#ItemViewHolder#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#ListItem#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#EPubItem#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#DrawNoteItem#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#createInitialDataIfNeeded#0;class#MainActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/layout/selection_drag_layer.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="732" column="0" selection-start-line="732" selection-start-column="0" selection-end-line="732" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubReaderActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/txtsel/TextSelectionSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-613">
+          <caret line="292" column="58" selection-start-line="292" selection-start-column="58" selection-end-line="292" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/java/hosung/epublib/EPubPageFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="61" column="53" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/layout/view_config.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="145" column="9" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+          <folding>
+            <element signature="e#1936#1952#0" expanded="true" />
+            <element signature="e#2071#2092#0" expanded="true" />
+            <element signature="e#2372#2386#0" expanded="true" />
+            <element signature="e#2505#2524#0" expanded="true" />
+            <element signature="e#2804#2818#0" expanded="true" />
+            <element signature="e#2937#2956#0" expanded="true" />
+            <element signature="e#3239#3256#0" expanded="true" />
+            <element signature="e#3375#3397#0" expanded="true" />
+            <element signature="e#5949#5970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epublib/src/main/res/layout/view_audio_player.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="159" column="9" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="9" />
+          <folding>
+            <element signature="e#2988#3009#0" expanded="true" />
+            <element signature="e#3423#3442#0" expanded="true" />
+            <element signature="e#3730#3752#0" expanded="true" />
+            <element signature="e#3871#3890#0" expanded="true" />
+            <element signature="e#4170#4185#0" expanded="true" />
+            <element signature="e#4304#4326#0" expanded="true" />
+            <element signature="e#5056#5071#0" expanded="true" />
+            <element signature="e#5266#5285#0" expanded="true" />
+            <element signature="e#5772#5797#0" expanded="true" />
+            <element signature="e#6016#6035#0" expanded="true" />
+            <element signature="e#6654#6676#0" expanded="true" />
           </folding>
         </state>
       </provider>
