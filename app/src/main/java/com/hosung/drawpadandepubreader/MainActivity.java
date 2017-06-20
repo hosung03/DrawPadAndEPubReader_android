@@ -24,27 +24,35 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import hosung.epublib.EPubReaderActivity;
 import hosung.setionlibrary.SectionedRecyclerViewAdapter;
 import hosung.setionlibrary.StatelessSection;
 import io.realm.Realm;
 import io.realm.RealmResults;
 import io.realm.SyncUser;
 
+/**
+ * Created by Hosung, Lee on 2017. 5. 23..
+ */
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final int REQUEST_LOGIN = 0;
     private static final int REQUEST_DRAWPAD = 1;
+    private static final int REQUEST_EPUBREAD = 2;
 
-    public static String realmServerIP = "127.0.0.1"; // your Realm Object Server IP
+    public static String realmServerIP = "10.20.141.167"; //"127.0.0.1"; // your Realm Object Server IP
     public static String realmID = "demo@localhost.io"; // your Login ID of the Realm Object Server
     public static String realmPasswd = "demo1234"; // your Login Password of the Realm Object Server
 
-    static final String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad1";
+    static final String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad";
     static final String syncAuthURL = "http://"+realmServerIP+":9080/auth";
 
     static final String DEFAULT_USER_NAME = "test";
     static final String DEFAULT_USER_EMAIL = "test@localhost.io";
     static final String DEFAULT_USER_PASSWORD = "1234";
+
+    static final String DEFAULT_NOTE_TITLE = "New Note";
 
     public static boolean isSynced = false;
 
@@ -227,8 +235,13 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     int position = sectionAdapter.getPositionInSection(itemHolder.getAdapterPosition());
                     if (title.equals(getString(R.string.epub_list))) {
-                        Toast.makeText(MainActivity.this, "I am going to implement this feature soon.",
-                                Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(MainActivity.this, "I am going to implement this feature soon.",
+//                                Toast.LENGTH_SHORT).show();
+                        EPubItem ePubItem = (EPubItem) list.get(position);
+
+                        Intent intent = new Intent(MainActivity.this, EPubReaderActivity.class);
+                        intent.putExtra("FileName",ePubItem.getFileName());
+                        startActivityForResult(intent, REQUEST_EPUBREAD);
                     } else if (title.equals(getString(R.string.drawnote_list))) {
                         DrawNoteItem drawNoteItem = (DrawNoteItem) list.get(position);
 
@@ -376,6 +389,5 @@ public class MainActivity extends AppCompatActivity {
         } finally {
             realm.close();
         }
-
     }
 }

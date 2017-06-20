@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EPubLib</string>
+
+
+    <!--For DirectionalViewpager-->
+    <string name="debug_start_drag">Starting drag!</string>
+    <string name="debug_start_unable_drag">Starting unable to drag!</string>
+</resources>

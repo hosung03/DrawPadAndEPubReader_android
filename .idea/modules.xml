@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/DrawPadAndEPubReader_android.iml" filepath="$PROJECT_DIR$/DrawPadAndEPubReader_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/colorpickerlib/colorpickerlib.iml" filepath="$PROJECT_DIR$/colorpickerlib/colorpickerlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/epublib/epublib.iml" filepath="$PROJECT_DIR$/epublib/epublib.iml" />
       <module fileurl="file://$PROJECT_DIR$/sectionlib/sectionlib.iml" filepath="$PROJECT_DIR$/sectionlib/sectionlib.iml" />
     </modules>
   </component>
