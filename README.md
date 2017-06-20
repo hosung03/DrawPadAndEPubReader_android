@@ -7,7 +7,8 @@ This is my personal project for implementing Android iOS applications with sever
 - EPub Reader (it will be added soon)
 - Mobile Database
 - Realtime Synchronization
-  * A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Synchronization. 
+
+A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Synchronization. 
 
 ## Screenshot
 
