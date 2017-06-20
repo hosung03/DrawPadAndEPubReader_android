@@ -45,3 +45,9 @@ A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Sy
     static final String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad1";
     static final String syncAuthURL = "http://"+realmServerIP+":9080/auth";
   </code></pre>
+
+## References
+
+- Realm-Draw (https://github.com/realm/realm-java)
+- Color Picker (https://github.com/kristiyanP/colorpicker)
+- RecyclerView (https://github.com/luizgrp/SectionedRecyclerViewAdapter)
