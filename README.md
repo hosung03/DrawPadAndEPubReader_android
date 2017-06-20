@@ -1,13 +1,15 @@
 # DrawPadAndEPubReader_android
 
-This is my personal project for implementing Android iOS applications with several features like
+## Features
 
+This is my personal project for implementing Android iOS applications with several features like
 - Drawing Pad
 - EPub Reader (it will be added soon)
 - Mobile Database
 - Realtime Synchronization
+  * A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Synchronization. 
 
-A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Synchronization. 
+## Screenshot
 
 <p align="center">
   <img src="screenshot/ApplicaionsCapture_1.jpg" width="400"/>
@@ -19,3 +21,25 @@ A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Sy
   <img src="screenshot/Screenshot_3.png" width="200"/>
   <img src="screenshot/Screenshot_4.png" width="200"/>
 </p>
+
+## Prerequisites
+
+- Build Realm Object Server (This is a database like SQL server) 
+  * Install after downloading the current version 
+  * Documentation & Download Url : https://realm.io/docs/get-started/
+
+- Check IP, Port Nuamber of Realm Object Server and make a user in Realm Object Server for this service
+  * The port number of Realm Object Server is 9080 
+  * If Realm Object Server is localhost, the IP is 127.0.0.1.
+  * If Realm Object Server is working at localhost, the admin web site is http://localhost:9080/
+  * Create an admin user and then login the admin site with the admin user 
+  * Create an other user for your service 
+  
+  * My configuration is :
+    public static String realmServerIP = "127.0.0.1"; // your Realm Object Server IP
+    public static String realmID = "demo@localhost.io"; // your Login ID of the Realm Object Server
+    public static String realmPasswd = "demo1234"; // your Login Password of the Realm Object Server
+    
+    static final String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad1";
+    static final String syncAuthURL = "http://"+realmServerIP+":9080/auth";
+
