@@ -11,9 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.hosung.drawpadandepubreader.models.DrawNote;
 import com.hosung.drawpadandepubreader.models.UserProfile;
-import com.hosung.drawpadandepubreader.util.UriHelper;
 
 import io.realm.ObjectServerError;
 import io.realm.Realm;
@@ -21,6 +19,10 @@ import io.realm.RealmResults;
 import io.realm.SyncConfiguration;
 import io.realm.SyncCredentials;
 import io.realm.SyncUser;
+
+/**
+ * Created by Hosung, Lee on 2017. 5. 23..
+ */
 
 public class SignupActivity extends AppCompatActivity {
     private static final String TAG = "SignupActivity";
@@ -67,7 +69,6 @@ public class SignupActivity extends AppCompatActivity {
 
     public void signup() {
         if (!validate()) {
-            //Toast.makeText(getBaseContext(), "Validate Error!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -76,7 +77,7 @@ public class SignupActivity extends AppCompatActivity {
         } else {
             signupButton.setEnabled(false);
 
-            final ProgressDialog progressDialog = new ProgressDialog(SignupActivity.this,
+            progressDialog = new ProgressDialog(SignupActivity.this,
                     R.style.AppTheme_Dark_Dialog);
             progressDialog.setIndeterminate(true);
             progressDialog.setMessage("Authenticating...");
@@ -91,8 +92,10 @@ public class SignupActivity extends AppCompatActivity {
                             = new SyncConfiguration.Builder(user, MainActivity.syncServerURL).build();
                     Realm.setDefaultConfiguration(syncConfiguration);
                     MainActivity.isSynced = true;
-                    MainActivity.createInitialDataIfNeeded();
+                    //MainActivity.createInitialDataIfNeeded();
 
+                    progressDialog.dismiss();
+                    signupButton.setEnabled(true);
                     onSignupProcess();
                 }
 
@@ -121,9 +124,6 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void onSignupProcess() {
-        progressDialog.dismiss();
-        signupButton.setEnabled(true);
-
         Realm realm = Realm.getDefaultInstance();
         final RealmResults<UserProfile> users
                 = realm.where(UserProfile.class).equalTo("email", emailText.getText().toString()).findAll();
@@ -141,12 +141,9 @@ public class SignupActivity extends AppCompatActivity {
             userProfile.setPasswd(passwordText.getText().toString());
             realm.commitTransaction();
 
-            //realm.close();
-            //Toast.makeText(getBaseContext(), "A profile is registered!", Toast.LENGTH_LONG).show();
             setResult(RESULT_OK, null);
             finish();
         } else  {
-            //realm.close();
             Toast.makeText(getBaseContext(), "This email is in use!", Toast.LENGTH_LONG).show();
         }
     }
@@ -189,6 +186,4 @@ public class SignupActivity extends AppCompatActivity {
 
         return valid;
     }
-
-
 }

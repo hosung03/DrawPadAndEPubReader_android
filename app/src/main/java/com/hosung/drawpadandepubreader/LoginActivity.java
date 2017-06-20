@@ -12,17 +12,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hosung.drawpadandepubreader.models.UserProfile;
-import com.hosung.drawpadandepubreader.util.UriHelper;
 
 import io.realm.ObjectServerError;
 import io.realm.Realm;
-import io.realm.RealmObject;
-import io.realm.RealmResults;
 import io.realm.SyncConfiguration;
 import io.realm.SyncCredentials;
 import io.realm.SyncUser;
 
-import static java.security.AccessController.getContext;
+/**
+ * Created by Hosung, Lee on 2017. 5. 23..
+ */
 
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
@@ -110,6 +109,8 @@ public class LoginActivity extends AppCompatActivity {
                     MainActivity.isSynced = true;
                     //MainActivity.createInitialDataIfNeeded();
 
+                    progressDialog.dismiss();
+                    loginButton.setEnabled(true);
                     onLoginProcess();
                 }
 
@@ -135,9 +136,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onLoginProcess() {
-        progressDialog.dismiss();
-        loginButton.setEnabled(true);
-
         Realm realm = Realm.getDefaultInstance();
         UserProfile user = realm.where(UserProfile.class)
                                 .equalTo("email", emailText.getText().toString())
@@ -210,4 +208,3 @@ public class LoginActivity extends AppCompatActivity {
         return valid;
     }
 }
-

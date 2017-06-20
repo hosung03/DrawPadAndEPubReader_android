@@ -52,6 +52,10 @@ import hosung.colorpickerlib.ColorPicker;
 import io.realm.Realm;
 import io.realm.RealmList;
 
+/**
+ * Created by Hosung, Lee on 2017. 5. 23..
+ */
+
 public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.Callback, View.OnClickListener {
     private static final String TAG = "DrawPadActivity";
     private static final int REQUEST_BACKIMG = 0;
@@ -481,6 +485,17 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
             }
         }
         colorPicker.setDefaultColorButton(currentColor);
+//        colorPicker.setOnChooseColorListener(new ColorPicker.OnChooseColorListener() {
+//            @Override
+//            public void onChooseColor(int position, int color) {
+//                currentColor = color;
+//            }
+//
+//            @Override
+//            public void onCancel() {
+//
+//            }
+//        });
         colorPicker.setOnFastChooseColorListener(new ColorPicker.OnFastChooseColorListener() {
             @Override
             public void setOnFastChooseColorListener(int position, int color) {
