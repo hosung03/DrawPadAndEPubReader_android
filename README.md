@@ -1,4 +1,4 @@
-# DrawPadAndEPubReader_android
+# DrawPadAndEPubReader_android (under developing)
 
 ## Features
 
