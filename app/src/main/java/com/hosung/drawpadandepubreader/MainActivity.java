@@ -33,6 +33,7 @@ import hosung.epublib.EPubReaderActivity;
 import hosung.setionlibrary.SectionedRecyclerViewAdapter;
 import hosung.setionlibrary.StatelessSection;
 import io.realm.Realm;
+import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 import io.realm.SyncUser;
 
@@ -46,12 +47,12 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_DRAWPAD = 1;
     private static final int REQUEST_EPUBREAD = 2;
 
-    public static String realmServerIP = "10.20.141.167"; //"127.0.0.1"; // your Realm Object Server IP
+    public static String realmServerIP = "127.0.0.1"; // your Realm Object Server IP
     public static String realmID = "demo@localhost.io"; // your Login ID of the Realm Object Server
     public static String realmPasswd = "demo1234"; // your Login Password of the Realm Object Server
 
-    static final String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad";
-    static final String syncAuthURL = "http://"+realmServerIP+":9080/auth";
+    static String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad";
+    static String syncAuthURL = "http://"+realmServerIP+":9080/auth";
 
     static final String DEFAULT_USER_NAME = "test";
     static final String DEFAULT_USER_EMAIL = "test@localhost.io";
@@ -147,8 +148,7 @@ public class MainActivity extends AppCompatActivity {
             realm = null;
         }
 
-        SyncUser user = SyncUser.currentUser();
-        user.logout();
+        MainActivity.logoff();
 
         finish();
         System.exit(0);
@@ -373,6 +373,17 @@ public class MainActivity extends AppCompatActivity {
         public void setNoteId(int noteid) {
             this.noteid = noteid;
         }
+    }
+
+    public static void logoff(){
+        Realm realm = Realm.getDefaultInstance();
+        RealmConfiguration realmConfig = realm.getConfiguration();
+        realm.close();
+        SyncUser user = SyncUser.currentUser();
+        if (user != null) {
+            user.logout();
+        }
+        Realm.deleteRealm(realmConfig);
     }
 
     public static void createInitialDataIfNeeded() {

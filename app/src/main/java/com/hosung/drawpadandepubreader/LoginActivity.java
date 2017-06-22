@@ -15,6 +15,7 @@ import com.hosung.drawpadandepubreader.models.UserProfile;
 
 import io.realm.ObjectServerError;
 import io.realm.Realm;
+import io.realm.RealmConfiguration;
 import io.realm.SyncConfiguration;
 import io.realm.SyncCredentials;
 import io.realm.SyncUser;
@@ -99,8 +100,12 @@ public class LoginActivity extends AppCompatActivity {
             progressDialog.setMessage("Authenticating...");
             progressDialog.show();
 
+            MainActivity.logoff();
+
             final SyncCredentials syncCredentials = SyncCredentials.usernamePassword(MainActivity.realmID, MainActivity.realmPasswd);
-            SyncUser.loginAsync(syncCredentials, MainActivity.syncAuthURL, new SyncUser.Callback() {
+            final String syncAuthURL = MainActivity.syncAuthURL;
+            final String syncServerURL = MainActivity.syncServerURL;
+            SyncUser.loginAsync(syncCredentials, syncAuthURL, new SyncUser.Callback() {
                 @Override
                 public void onSuccess(SyncUser user) {
                     final SyncConfiguration syncConfiguration
@@ -130,7 +135,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     Toast.makeText(LoginActivity.this, errorMsg, Toast.LENGTH_LONG).show();
                     loginButton.setEnabled(true);
-                }
+               }
             });
         }
     }
