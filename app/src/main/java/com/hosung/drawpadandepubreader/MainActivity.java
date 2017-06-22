@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
     static String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad";
     static String syncAuthURL = "http://"+realmServerIP+":9080/auth";
 
+    public static void setRrealmServerIP(String serverIP) {
+        MainActivity.realmServerIP = serverIP;
+        MainActivity.syncServerURL = "realm://"+MainActivity.realmServerIP+":9080/~/DrawPad";
+        MainActivity.syncAuthURL = "http://"+MainActivity.realmServerIP+":9080/auth";
+    }
+
     static final String DEFAULT_USER_NAME = "test";
     static final String DEFAULT_USER_EMAIL = "test@localhost.io";
     static final String DEFAULT_USER_PASSWORD = "1234";

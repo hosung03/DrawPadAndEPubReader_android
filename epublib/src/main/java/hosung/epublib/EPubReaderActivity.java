@@ -77,6 +77,7 @@ public class EPubReaderActivity extends AppCompatActivity implements
         }
         mEpubFileName = FileUtil.getEpubFilename(this, mEpubSourceType, mEpubFilePath, mEpubRawId);
         initBook();
+        //mToolbar = (Toolbar) findViewById(R.id.toolbar);
     }
 
     private void initBook() {
@@ -290,17 +291,17 @@ public class EPubReaderActivity extends AppCompatActivity implements
     }
 
     private void toolbarAnimateShow(final int verticalOffset) {
-        mToolbar.animate()
-                .translationY(0)
-                .setInterpolator(new LinearInterpolator())
-                .setDuration(180)
-                .setListener(new AnimatorListenerAdapter() {
-
-                    @Override
-                    public void onAnimationStart(Animator animation) {
-                        toolbarSetElevation(verticalOffset == 0 ? 0 : 1);
-                    }
-                });
+//        mToolbar.animate()
+//                .translationY(0)
+//                .setInterpolator(new LinearInterpolator())
+//                .setDuration(180)
+//                .setListener(new AnimatorListenerAdapter() {
+//
+//                    @Override
+//                    public void onAnimationStart(Animator animation) {
+//                        toolbarSetElevation(verticalOffset == 0 ? 0 : 1);
+//                    }
+//                });
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -320,23 +321,23 @@ public class EPubReaderActivity extends AppCompatActivity implements
     }
 
     private void toolbarAnimateHide() {
-        mToolbar.animate()
-                .translationY(-mToolbar.getHeight())
-                .setInterpolator(new LinearInterpolator())
-                .setDuration(180)
-                .setListener(new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-                        toolbarSetElevation(0);
-                    }
-                });
+//        mToolbar.animate()
+//                .translationY(-mToolbar.getHeight())
+//                .setInterpolator(new LinearInterpolator())
+//                .setDuration(180)
+//                .setListener(new AnimatorListenerAdapter() {
+//                    @Override
+//                    public void onAnimationEnd(Animator animation) {
+//                        toolbarSetElevation(0);
+//                    }
+//                });
         mIsActionBarVisible = false;
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void toolbarSetElevation(float elevation) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            mToolbar.setElevation(elevation);
+//            mToolbar.setElevation(elevation);
         }
     }
 

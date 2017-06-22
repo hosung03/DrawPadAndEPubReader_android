@@ -78,6 +78,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         // for test
+        MainActivity.setRrealmServerIP("10.20.157.159");
         emailText.setText("test@localhost.io");
         passwordText.setText("1234");
     }
@@ -109,7 +110,7 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onSuccess(SyncUser user) {
                     final SyncConfiguration syncConfiguration
-                            = new SyncConfiguration.Builder(user, MainActivity.syncServerURL).build();
+                            = new SyncConfiguration.Builder(user, syncServerURL).build();
                     Realm.setDefaultConfiguration(syncConfiguration);
                     MainActivity.isSynced = true;
                     //MainActivity.createInitialDataIfNeeded();

@@ -33,12 +33,9 @@ public class ObjSvrSettingActivity extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.realmServerIP = serverIPText.getText().toString();
+                MainActivity.setRrealmServerIP(serverIPText.getText().toString());
                 MainActivity.realmID = usernameText.getText().toString();
                 MainActivity.realmPasswd = passwordText.getText().toString();
-
-                MainActivity.syncServerURL = "realm://"+serverIPText.getText().toString()+":9080/~/DrawPad";
-                MainActivity.syncAuthURL = "http://"+serverIPText.getText().toString()+":9080/auth";
 
                 setResult(RESULT_OK, null);
                 finish();
