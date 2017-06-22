@@ -2,7 +2,7 @@
 
 ## Features
 
-This is my personal project for implementing Android iOS applications with several features like
+This is my personal project for implementing a Android application with several features like
 - Drawing Pad
 - EPub Reader (it will be added soon)
 - Mobile Database
