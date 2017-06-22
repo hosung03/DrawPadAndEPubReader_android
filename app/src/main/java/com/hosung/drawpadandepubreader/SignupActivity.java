@@ -83,13 +83,16 @@ public class SignupActivity extends AppCompatActivity {
             progressDialog.setMessage("Authenticating...");
             progressDialog.show();
 
+            MainActivity.logoff();
+
             final SyncCredentials syncCredentials = SyncCredentials.usernamePassword(MainActivity.realmID, MainActivity.realmPasswd);
-            SyncUser.loginAsync(syncCredentials, MainActivity.syncAuthURL, new SyncUser.Callback() {
+            final String syncAuthURL = MainActivity.syncAuthURL;
+            final String syncServerURL = MainActivity.syncServerURL;
+            SyncUser.loginAsync(syncCredentials, syncAuthURL, new SyncUser.Callback() {
                 @Override
                 public void onSuccess(SyncUser user) {
-                    Log.d(TAG, "Realm Server Connection Success!");
                     final SyncConfiguration syncConfiguration
-                            = new SyncConfiguration.Builder(user, MainActivity.syncServerURL).build();
+                            = new SyncConfiguration.Builder(user, syncServerURL).build();
                     Realm.setDefaultConfiguration(syncConfiguration);
                     MainActivity.isSynced = true;
                     //MainActivity.createInitialDataIfNeeded();

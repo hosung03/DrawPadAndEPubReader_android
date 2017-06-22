@@ -1,9 +1,14 @@
 package com.hosung.drawpadandepubreader;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -24,27 +29,42 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import hosung.epublib.EPubReaderActivity;
 import hosung.setionlibrary.SectionedRecyclerViewAdapter;
 import hosung.setionlibrary.StatelessSection;
 import io.realm.Realm;
+import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 import io.realm.SyncUser;
+
+/**
+ * Created by Hosung, Lee on 2017. 5. 23..
+ */
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final int REQUEST_LOGIN = 0;
     private static final int REQUEST_DRAWPAD = 1;
+    private static final int REQUEST_EPUBREAD = 2;
 
     public static String realmServerIP = "127.0.0.1"; // your Realm Object Server IP
     public static String realmID = "demo@localhost.io"; // your Login ID of the Realm Object Server
     public static String realmPasswd = "demo1234"; // your Login Password of the Realm Object Server
 
-    static final String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad1";
-    static final String syncAuthURL = "http://"+realmServerIP+":9080/auth";
+    static String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad";
+    static String syncAuthURL = "http://"+realmServerIP+":9080/auth";
+
+    public static void setRrealmServerIP(String serverIP) {
+        MainActivity.realmServerIP = serverIP;
+        MainActivity.syncServerURL = "realm://"+MainActivity.realmServerIP+":9080/~/DrawPad";
+        MainActivity.syncAuthURL = "http://"+MainActivity.realmServerIP+":9080/auth";
+    }
 
     static final String DEFAULT_USER_NAME = "test";
     static final String DEFAULT_USER_EMAIL = "test@localhost.io";
     static final String DEFAULT_USER_PASSWORD = "1234";
+
+    static final String DEFAULT_NOTE_TITLE = "New Note";
 
     public static boolean isSynced = false;
 
@@ -134,8 +154,7 @@ public class MainActivity extends AppCompatActivity {
             realm = null;
         }
 
-        SyncUser user = SyncUser.currentUser();
-        user.logout();
+        MainActivity.logoff();
 
         finish();
         System.exit(0);
@@ -227,8 +246,14 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     int position = sectionAdapter.getPositionInSection(itemHolder.getAdapterPosition());
                     if (title.equals(getString(R.string.epub_list))) {
-                        Toast.makeText(MainActivity.this, "I am going to implement this feature soon.",
-                                Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(MainActivity.this, "I am going to implement this feature soon.",
+//                                Toast.LENGTH_SHORT).show();
+                        EPubItem ePubItem = (EPubItem) list.get(position);
+
+                        Intent intent = new Intent(MainActivity.this, EPubReaderActivity.class);
+                        intent.putExtra("EPubFilePath", ePubItem.getFileName());
+                        intent.putExtra("EPubSourceType", EPubReaderActivity.EpubSourceType.ASSESTS);
+                        startActivityForResult(intent, REQUEST_EPUBREAD);
                     } else if (title.equals(getString(R.string.drawnote_list))) {
                         DrawNoteItem drawNoteItem = (DrawNoteItem) list.get(position);
 
@@ -356,6 +381,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public static void logoff(){
+        Realm realm = Realm.getDefaultInstance();
+        RealmConfiguration realmConfig = realm.getConfiguration();
+        realm.close();
+        SyncUser user = SyncUser.currentUser();
+        if (user != null) {
+            user.logout();
+        }
+        Realm.deleteRealm(realmConfig);
+    }
+
     public static void createInitialDataIfNeeded() {
         final Realm realm = Realm.getDefaultInstance();
         try {
@@ -376,6 +412,5 @@ public class MainActivity extends AppCompatActivity {
         } finally {
             realm.close();
         }
-
     }
 }

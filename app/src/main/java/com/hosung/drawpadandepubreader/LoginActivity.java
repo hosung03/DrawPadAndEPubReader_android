@@ -15,6 +15,7 @@ import com.hosung.drawpadandepubreader.models.UserProfile;
 
 import io.realm.ObjectServerError;
 import io.realm.Realm;
+import io.realm.RealmConfiguration;
 import io.realm.SyncConfiguration;
 import io.realm.SyncCredentials;
 import io.realm.SyncUser;
@@ -77,6 +78,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         // for test
+        MainActivity.setRrealmServerIP("10.20.157.159");
         emailText.setText("test@localhost.io");
         passwordText.setText("1234");
     }
@@ -99,12 +101,16 @@ public class LoginActivity extends AppCompatActivity {
             progressDialog.setMessage("Authenticating...");
             progressDialog.show();
 
+            MainActivity.logoff();
+
             final SyncCredentials syncCredentials = SyncCredentials.usernamePassword(MainActivity.realmID, MainActivity.realmPasswd);
-            SyncUser.loginAsync(syncCredentials, MainActivity.syncAuthURL, new SyncUser.Callback() {
+            final String syncAuthURL = MainActivity.syncAuthURL;
+            final String syncServerURL = MainActivity.syncServerURL;
+            SyncUser.loginAsync(syncCredentials, syncAuthURL, new SyncUser.Callback() {
                 @Override
                 public void onSuccess(SyncUser user) {
                     final SyncConfiguration syncConfiguration
-                            = new SyncConfiguration.Builder(user, MainActivity.syncServerURL).build();
+                            = new SyncConfiguration.Builder(user, syncServerURL).build();
                     Realm.setDefaultConfiguration(syncConfiguration);
                     MainActivity.isSynced = true;
                     //MainActivity.createInitialDataIfNeeded();
@@ -130,7 +136,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     Toast.makeText(LoginActivity.this, errorMsg, Toast.LENGTH_LONG).show();
                     loginButton.setEnabled(true);
-                }
+               }
             });
         }
     }

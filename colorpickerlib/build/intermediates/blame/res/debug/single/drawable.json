@@ -4,12 +4,12 @@
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/drawable/notification_bg.xml"
     },
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/intermediates/res/merged/debug/drawable/bg_button_normal.xml",
-        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/drawable/bg_button_normal.xml"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/intermediates/res/merged/debug/drawable/bg_button_normal.xml",
+        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/drawable/bg_button_normal.xml"
     },
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
