@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    }
+]

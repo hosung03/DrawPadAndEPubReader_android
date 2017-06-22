@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res"/><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/generated/res/rs/release"/><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/generated/res/resValues/release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/release/res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res"><file name="bg_button_normal" path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/drawable/bg_button_normal.xml" qualifiers="" type="drawable"/><file name="bg_button_pressed" path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/drawable/bg_button_pressed.xml" qualifiers="" type="drawable"/><file name="button" path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/drawable/button.xml" qualifiers="" type="drawable"/><file name="round_button" path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/drawable/round_button.xml" qualifiers="" type="drawable"/><file name="color_palette_layout" path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/layout/color_palette_layout.xml" qualifiers="" type="layout"/><file name="palette_item" path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/layout/palette_item.xml" qualifiers="" type="layout"/><file path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/values/colorpicker-array.xml" qualifiers=""><array name="default_colors">
+        <item>@color/color0</item>
+
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/color5</item>
+
+        <item>@color/color6</item>
+        <item>@color/color7</item>
+        <item>@color/color8</item>
+        <item>@color/color9</item>
+        <item>@color/color10</item>
+
+        <item>@color/color11</item>
+        <item>@color/color12</item>
+        <item>@color/color13</item>
+        <item>@color/color14</item>
+        <item>@color/color15</item>
+
+    </array></file><file path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/values/colorpicker-colors.xml" qualifiers=""><color name="window_background">#00000000</color><color name="lite_blue">#42a5f5</color><color name="color8">#E87034</color><color name="color7">#59BC10</color><color name="color9">#f84c44</color><color name="color4">#DD3E48</color><color name="color3">#F4B528</color><color name="color6">#5C88BE</color><color name="color5">#BF89AE</color><color name="color0">#000000</color><color name="color15">#9086BA</color><color name="color14">#CE7777</color><color name="color2">#58AEB7</color><color name="color13">#C2987D</color><color name="color1">#2062af</color><color name="color12">#8cc453</color><color name="color11">#51C1EE</color><color name="color10">#8c47fb</color><color name="black_de">#000000</color><color name="white">#ffffff</color></file><file path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/values/dimens.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="action_button_padding_horizontal">4dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="action_button_text_size">14sp</dimen><dimen name="action_button_height">32dp</dimen><dimen name="action_button_min_width">56dp</dimen></file><file path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/values/strings.xml" qualifiers=""><string name="colorpicker_dialog_ok">OK</string><string name="app_name">ColorPickerLibrary</string><string name="colorpicker_dialog_title">Choose the color</string><string name="colorpicker_dialog_cancel">CANCEL</string></file><file path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/main/res/values/styles.xml" qualifiers=""><style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/action_button_height</item>
+        <item name="android:minWidth">@dimen/action_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/action_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/action_button_padding_horizontal</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">@dimen/action_button_text_size</item>
+    </style></file></source><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/generated/res/rs/release"/><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/generated/res/resValues/release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/src/release/res"/></dataSet><mergedItems/></merger>

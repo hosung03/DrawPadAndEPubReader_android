@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/menu/navigation.xml",
+        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/res/menu/navigation.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/menu/menu_drawpad.xml",
+        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/res/menu/menu_drawpad.xml"
+    }
+]

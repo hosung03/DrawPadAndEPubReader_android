@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/sectionlib/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/sectionlib/src/debug/shaders"/></dataSet></merger>

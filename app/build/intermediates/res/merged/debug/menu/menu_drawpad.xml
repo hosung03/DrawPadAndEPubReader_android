@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/optmenuClear"
+        android:title="Clear"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/optmenuColor"
+        android:title="Color"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/optmenuBrushSize"
+        android:title="Brush Size"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/optmenuBackImage"
+        android:title="Open image as background"
+        app:showAsAction="never" />
+    <!--<item-->
+        <!--android:id="@+id/optmenuCapture"-->
+        <!--android:title="Capture"-->
+        <!--app:showAsAction="never" />-->
+    <item
+        android:id="@+id/optmenuSave"
+        android:title="Save"
+        app:showAsAction="never" />
+</menu>
