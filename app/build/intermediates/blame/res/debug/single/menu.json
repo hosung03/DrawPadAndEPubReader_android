@@ -10,5 +10,9 @@
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/menu/menu_drawpad.xml",
         "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/res/menu/menu_drawpad.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/menu/menu_epubreader.xml",
+        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/menu/menu_epubreader.xml"
     }
 ]

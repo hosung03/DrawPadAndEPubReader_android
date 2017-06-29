@@ -40,24 +40,24 @@
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/anim/abc_popup_exit.xml"
     },
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/anim/abc_grow_fade_in_from_bottom.xml"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/anim/pump_bottom.xml",
         "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/anim/pump_bottom.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/anim/push_left_in.xml",
         "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/res/anim/push_left_in.xml"
     },
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/anim/abc_slide_in_top.xml"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/anim/shrink_from_topleft_to_bottomright.xml",
         "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/anim/shrink_from_topleft_to_bottomright.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/anim/abc_slide_in_top.xml"
     },
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",

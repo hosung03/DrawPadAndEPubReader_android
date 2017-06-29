@@ -130,12 +130,16 @@
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="app_background_color">#FAFAFA</color>
+    <color name="app_gray">#bcbcbc</color>
+    <color name="app_green">#71C951</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
     <color name="black">#000000</color>
     <color name="black_de">#000000</color>
+    <color name="blue">#ADD8FF</color>
+    <color name="borders">#F1EFF2</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -168,6 +172,7 @@
     <color name="colorPrimary">#018d01</color>
     <color name="colorPrimaryDark">#017601</color>
     <color name="colorPrimaryDarker">#006400</color>
+    <color name="dark_night">#090609</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
@@ -186,6 +191,8 @@
     <color name="divider_color">#C7C7CC</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="gray_text">#B6B6B6</color>
+    <color name="green">#C0ED72</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="image_placeholder_background_color">#C7C7CC</color>
@@ -204,9 +211,11 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
+    <color name="night">#322D32</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="pink">#FFB0CA</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -215,6 +224,7 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="red">#ff0000</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -225,8 +235,11 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="text_color">#767676</color>
+    <color name="transparent_black">#80000000</color>
     <color name="white">#ffffff</color>
     <color name="window_background">#00000000</color>
+    <color name="yellow">#FFEB6B</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
@@ -424,6 +437,7 @@
             <flag name="all" value="0x77"/>
         </attr></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
+    <declare-styleable name="DirectionalViewpager"><attr format="string" name="direction"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize">
             
@@ -468,6 +482,7 @@
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="SnackbarLayout"><attr name="android:maxWidth"/><attr name="elevation"/><attr format="dimension" name="maxActionInlineWidth"/></declare-styleable>
     <declare-styleable name="Spinner"><attr name="android:prompt"/><attr name="popupTheme"/><attr name="android:popupBackground"/><attr name="android:dropDownWidth"/><attr name="android:entries"/></declare-styleable>
+    <declare-styleable name="StyleableTextView"><attr format="string" name="font"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="color" name="thumbTint"/><attr name="thumbTintMode">
             
             <enum name="src_over" value="3"/>
@@ -522,6 +537,7 @@
             
             <flag name="bottom" value="0x50"/>
         </attr><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="logo"/><attr format="string" name="logoDescription"/><attr format="color" name="titleTextColor"/><attr format="color" name="subtitleTextColor"/><attr name="android:minHeight"/></declare-styleable>
+    <declare-styleable name="UnderlinedTextView"><attr format="dimension" name="underlineWidth"/><attr format="color" name="underlineColor"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode">
             
@@ -710,6 +726,10 @@
     <integer name="hide_password_duration">320</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="Cancel">Cancel</string>
+    <string name="LanguageChooserTitle">Choose two languages:</string>
+    <string name="OK">OK</string>
+    <string name="SetSizeTitle">Upper Panel Size:</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -742,24 +762,89 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="addItem">ADD</string>
+    <string name="andada">Andada</string>
+    <string name="andada_font">fonts/andada/Andada-Regular.otf</string>
     <string name="app_name">DrawPadAndEPubReader</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="audio_mark_id">javascript:alert(audioMarkID(\'epub-media-overlay-playing\',\'%s\'))</string>
+    <string name="authorsMeta">&lt;tr>&lt;td>Authors:&lt;/td></string>
+    <string name="black_rgb">#000000</string>
+    <string name="blue_rgb">#0000ff</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="changeStyle">Change Style</string>
+    <string name="change_Font">Change Font</string>
+    <string name="change_Font_Color">Font Color:</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="colorpicker_dialog_cancel">CANCEL</string>
     <string name="colorpicker_dialog_ok">OK</string>
     <string name="colorpicker_dialog_title">Choose the color</string>
+    <string name="contents">Contents</string>
+    <string name="contributorsMeta">&lt;tr>&lt;td>Contributors:&lt;/td></string>
+    <string name="copied">Copied</string>
+    <string name="copy">Copy</string>
+    <string name="css_tag">&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"%s\"></string>
+    <string name="debug_start_drag">Starting drag!</string>
+    <string name="debug_start_unable_drag">Starting unable to drag!</string>
+    <string name="define">Define</string>
+    <string name="descriptionsMeta">&lt;tr>&lt;td>Descriptions:&lt;/td></string>
     <string name="drawnote_list">DrawNote List</string>
+    <string name="edit_notes">Save your note</string>
     <string name="epub_list">EPub List</string>
+    <string name="error_CannotChangeStyle">Cannot Change Style!</string>
+    <string name="error_goToPage">goToPage error:</string>
+    <string name="full_path">full-path</string>
+    <string name="getHighlightString">javascript:alert(getHighlightString(\'%s\'))</string>
+    <string name="green_rgb">#00ff00</string>
+    <string name="half_speed">1/2x</string>
+    <string name="half_speed_text">&lt;sup>1&lt;/sup>/&lt;sub>2&lt;/sub>x</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="highlight">Highlight</string>
+    <string name="highlights">Highlights</string>
+    <string name="htmlBodyTableOpen">&lt;html>&lt;body>&lt;table></string>
+    <string name="languageMeta">&lt;tr>&lt;td>Language:&lt;/td>&lt;td></string>
+    <string name="lato">Lato</string>
+    <string name="lato_font">fonts/lato/Lato-Regular.ttf</string>
+    <string name="less_than_minute">Less than a minute · </string>
+    <string name="loading">Loading</string>
+    <string name="lora">Lora</string>
+    <string name="lora_font">fonts/lora/Lora-Regular.ttf</string>
+    <string name="minute_left">%1$d minute · </string>
+    <string name="minutes_left">%1$d minutes · </string>
+    <string name="one_and_half">1 1/2x</string>
+    <string name="one_and_half_speed">1&lt;sup>1&lt;/sup>/&lt;sub>2&lt;/sub>x</string>
+    <string name="onex">1x</string>
+    <string name="page_left">%1$d page left</string>
+    <string name="pages_left">%1$d pages left</string>
+    <string name="parallelTextBool">parallelTextBool</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="pattern">\\{\\{(-?\\d+\\.?\\d*)\\,(-?\\d+\\.?\\d*)\\}\\,\\s\\{(-?\\d+\\.?\\d*)\\,(-?\\d+\\.?\\d*)\\}\\}</string>
+    <string name="please_enter_note">please enter a note</string>
+    <string name="please_wait">please wait...</string>
+    <string name="please_wait_till_audio_is_parsed">please wait till audio is been parsed, Retry after some time</string>
+    <string name="publishersMeta">&lt;tr>&lt;td>Publishers:&lt;/td></string>
+    <string name="raleway">Raleway</string>
+    <string name="raleway_font">fonts/raleway/Raleway-Regular.ttf</string>
+    <string name="red_rgb">#ff0000</string>
+    <string name="rightsMeta">&lt;tr>&lt;td>Rights:&lt;/td></string>
+    <string name="save_note">Save note</string>
     <string name="saved_your_location_to">Saved your artwork to %1$s</string>
+    <string name="script_tag">&lt;script type=\"text/javascript\" src=\"%s\">&lt;/script></string>
+    <string name="script_tag_method_call">&lt;script type=\"text/javascript\">%s&lt;/script></string>
     <string name="search_menu_title">Search</string>
     <string name="select_image_to_open">Select image to open</string>
+    <string name="send_to">Send to</string>
+    <string name="sethighlightstyle">javascript:alert(setHighlightStyle(\'%s\'));</string>
+    <string name="setmediaoverlaystyle">javascript:alert(setMediaOverlayStyle(\'%s\'))</string>
+    <string name="share">Share</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="style">Style</string>
+    <string name="style_underline">&lt;u style=\" border-bottom: 1px dashed #bcbcbc;   text-decoration: none;\">Style&lt;/u></string>
+    <string name="tablebodyhtmlClose">&lt;/table>&lt;/body>&lt;/html></string>
+    <string name="td_tag">&lt;td>%s&lt;/td>&lt;/tr></string>
     <string name="title_activity_draw_pad">DrawPad</string>
     <string name="title_activity_login">Sign in</string>
     <string name="title_activity_objsetting">Remote DB Setting</string>
@@ -767,6 +852,16 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
+    <string name="titlesMeta">&lt;tr>&lt;td>Titles:&lt;/td></string>
+    <string name="tocReference">&lt;tr>&lt;td>Table of Contents:&lt;/td></string>
+    <string name="tr_tag">&lt;tr>&lt;td>&lt;/td>&lt;td>%s&lt;/td>&lt;/tr></string>
+    <string name="two_x">2x</string>
+    <string name="typesMeta">&lt;tr>&lt;td>Types:&lt;/td></string>
+    <string name="underline_highlights">
+      <span style="border-bottom: 1px solid #ff0000;">%s</span>
+    </string>
+    <string name="white_rgb">#ffffff</string>
+    <string name="zip">.zip</string>
     <style name="ActionButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">@dimen/action_button_height</item>
@@ -783,6 +878,41 @@
     <style name="Animation.Design.BottomSheetDialog" parent="Animation.AppCompat.Dialog">
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
+    </style>
+    <style name="Animations"/>
+    <style name="Animations.PopDownMenu"/>
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+    <style name="Animations.PopUpMenu"/>
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -815,6 +945,10 @@
         <item name="colorAccent">@color/white</item>
         <item name="android:textColorPrimary">@color/iron</item>
         <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>

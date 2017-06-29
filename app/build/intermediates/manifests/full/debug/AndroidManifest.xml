@@ -48,6 +48,9 @@
             android:label="@string/title_activity_draw_pad"
             android:theme="@style/AppTheme" >
         </activity>
+        <activity
+            android:name="hosung.epublib.EPubReaderActivity"
+            android:configChanges="orientation|screenSize" />
     </application>
 
 </manifest>

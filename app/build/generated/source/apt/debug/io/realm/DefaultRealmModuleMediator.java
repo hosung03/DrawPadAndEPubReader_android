@@ -27,9 +27,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     private static final Set<Class<? extends RealmModel>> MODEL_CLASSES;
     static {
         Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>();
-        modelClasses.add(com.hosung.drawpadandepubreader.models.DrawNote.class);
-        modelClasses.add(com.hosung.drawpadandepubreader.models.UserProfile.class);
         modelClasses.add(com.hosung.drawpadandepubreader.models.DrawPoint.class);
+        modelClasses.add(com.hosung.drawpadandepubreader.models.UserProfile.class);
+        modelClasses.add(com.hosung.drawpadandepubreader.models.DrawNote.class);
         modelClasses.add(com.hosung.drawpadandepubreader.models.DrawPath.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
@@ -38,14 +38,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public RealmObjectSchema createRealmObjectSchema(Class<? extends RealmModel> clazz, RealmSchema realmSchema) {
         checkClass(clazz);
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            return io.realm.DrawNoteRealmProxy.createRealmObjectSchema(realmSchema);
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            return io.realm.DrawPointRealmProxy.createRealmObjectSchema(realmSchema);
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             return io.realm.UserProfileRealmProxy.createRealmObjectSchema(realmSchema);
         }
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            return io.realm.DrawPointRealmProxy.createRealmObjectSchema(realmSchema);
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            return io.realm.DrawNoteRealmProxy.createRealmObjectSchema(realmSchema);
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             return io.realm.DrawPathRealmProxy.createRealmObjectSchema(realmSchema);
@@ -57,14 +57,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public ColumnInfo validateTable(Class<? extends RealmModel> clazz, SharedRealm sharedRealm, boolean allowExtraColumns) {
         checkClass(clazz);
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            return io.realm.DrawNoteRealmProxy.validateTable(sharedRealm, allowExtraColumns);
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            return io.realm.DrawPointRealmProxy.validateTable(sharedRealm, allowExtraColumns);
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             return io.realm.UserProfileRealmProxy.validateTable(sharedRealm, allowExtraColumns);
         }
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            return io.realm.DrawPointRealmProxy.validateTable(sharedRealm, allowExtraColumns);
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            return io.realm.DrawNoteRealmProxy.validateTable(sharedRealm, allowExtraColumns);
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             return io.realm.DrawPathRealmProxy.validateTable(sharedRealm, allowExtraColumns);
@@ -76,14 +76,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public List<String> getFieldNames(Class<? extends RealmModel> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            return io.realm.DrawNoteRealmProxy.getFieldNames();
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            return io.realm.DrawPointRealmProxy.getFieldNames();
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             return io.realm.UserProfileRealmProxy.getFieldNames();
         }
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            return io.realm.DrawPointRealmProxy.getFieldNames();
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            return io.realm.DrawNoteRealmProxy.getFieldNames();
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             return io.realm.DrawPathRealmProxy.getFieldNames();
@@ -95,14 +95,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public String getTableName(Class<? extends RealmModel> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            return io.realm.DrawNoteRealmProxy.getTableName();
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            return io.realm.DrawPointRealmProxy.getTableName();
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             return io.realm.UserProfileRealmProxy.getTableName();
         }
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            return io.realm.DrawPointRealmProxy.getTableName();
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            return io.realm.DrawNoteRealmProxy.getTableName();
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             return io.realm.DrawPathRealmProxy.getTableName();
@@ -117,14 +117,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             objectContext.set((BaseRealm) baseRealm, row, columnInfo, acceptDefaultValue, excludeFields);
             checkClass(clazz);
 
-            if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-                return clazz.cast(new io.realm.DrawNoteRealmProxy());
+            if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+                return clazz.cast(new io.realm.DrawPointRealmProxy());
             }
             if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
                 return clazz.cast(new io.realm.UserProfileRealmProxy());
             }
-            if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-                return clazz.cast(new io.realm.DrawPointRealmProxy());
+            if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+                return clazz.cast(new io.realm.DrawNoteRealmProxy());
             }
             if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
                 return clazz.cast(new io.realm.DrawPathRealmProxy());
@@ -146,14 +146,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            return clazz.cast(io.realm.DrawNoteRealmProxy.copyOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawNote) obj, update, cache));
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            return clazz.cast(io.realm.DrawPointRealmProxy.copyOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) obj, update, cache));
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             return clazz.cast(io.realm.UserProfileRealmProxy.copyOrUpdate(realm, (com.hosung.drawpadandepubreader.models.UserProfile) obj, update, cache));
         }
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            return clazz.cast(io.realm.DrawPointRealmProxy.copyOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) obj, update, cache));
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            return clazz.cast(io.realm.DrawNoteRealmProxy.copyOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawNote) obj, update, cache));
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             return clazz.cast(io.realm.DrawPathRealmProxy.copyOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPath) obj, update, cache));
@@ -167,12 +167,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            io.realm.DrawNoteRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawNote) object, cache);
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            io.realm.DrawPointRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) object, cache);
         } else if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             io.realm.UserProfileRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.UserProfile) object, cache);
-        } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            io.realm.DrawPointRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) object, cache);
+        } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            io.realm.DrawNoteRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawNote) object, cache);
         } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             io.realm.DrawPathRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawPath) object, cache);
         } else {
@@ -192,24 +192,24 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-                io.realm.DrawNoteRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawNote) object, cache);
+            if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+                io.realm.DrawPointRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) object, cache);
             } else if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
                 io.realm.UserProfileRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.UserProfile) object, cache);
-            } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-                io.realm.DrawPointRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) object, cache);
+            } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+                io.realm.DrawNoteRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawNote) object, cache);
             } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
                 io.realm.DrawPathRealmProxy.insert(realm, (com.hosung.drawpadandepubreader.models.DrawPath) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-                    io.realm.DrawNoteRealmProxy.insert(realm, iterator, cache);
+                if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+                    io.realm.DrawPointRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
                     io.realm.UserProfileRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-                    io.realm.DrawPointRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+                    io.realm.DrawNoteRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
                     io.realm.DrawPathRealmProxy.insert(realm, iterator, cache);
                 } else {
@@ -225,12 +225,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            io.realm.DrawNoteRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawNote) obj, cache);
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            io.realm.DrawPointRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) obj, cache);
         } else if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             io.realm.UserProfileRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.UserProfile) obj, cache);
-        } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            io.realm.DrawPointRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) obj, cache);
+        } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            io.realm.DrawNoteRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawNote) obj, cache);
         } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             io.realm.DrawPathRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPath) obj, cache);
         } else {
@@ -250,24 +250,24 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-                io.realm.DrawNoteRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawNote) object, cache);
+            if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+                io.realm.DrawPointRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) object, cache);
             } else if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
                 io.realm.UserProfileRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.UserProfile) object, cache);
-            } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-                io.realm.DrawPointRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPoint) object, cache);
+            } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+                io.realm.DrawNoteRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawNote) object, cache);
             } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
                 io.realm.DrawPathRealmProxy.insertOrUpdate(realm, (com.hosung.drawpadandepubreader.models.DrawPath) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-                    io.realm.DrawNoteRealmProxy.insertOrUpdate(realm, iterator, cache);
+                if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+                    io.realm.DrawPointRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
                     io.realm.UserProfileRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-                    io.realm.DrawPointRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+                    io.realm.DrawNoteRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
                     io.realm.DrawPathRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
@@ -282,14 +282,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws JSONException {
         checkClass(clazz);
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            return clazz.cast(io.realm.DrawNoteRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            return clazz.cast(io.realm.DrawPointRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             return clazz.cast(io.realm.UserProfileRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            return clazz.cast(io.realm.DrawPointRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            return clazz.cast(io.realm.DrawNoteRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             return clazz.cast(io.realm.DrawPathRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
@@ -302,14 +302,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws IOException {
         checkClass(clazz);
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            return clazz.cast(io.realm.DrawNoteRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            return clazz.cast(io.realm.DrawPointRealmProxy.createUsingJsonStream(realm, reader));
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             return clazz.cast(io.realm.UserProfileRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            return clazz.cast(io.realm.DrawPointRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            return clazz.cast(io.realm.DrawNoteRealmProxy.createUsingJsonStream(realm, reader));
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             return clazz.cast(io.realm.DrawPathRealmProxy.createUsingJsonStream(realm, reader));
@@ -323,14 +323,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) realmObject.getClass().getSuperclass();
 
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
-            return clazz.cast(io.realm.DrawNoteRealmProxy.createDetachedCopy((com.hosung.drawpadandepubreader.models.DrawNote) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
+            return clazz.cast(io.realm.DrawPointRealmProxy.createDetachedCopy((com.hosung.drawpadandepubreader.models.DrawPoint) realmObject, 0, maxDepth, cache));
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.UserProfile.class)) {
             return clazz.cast(io.realm.UserProfileRealmProxy.createDetachedCopy((com.hosung.drawpadandepubreader.models.UserProfile) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPoint.class)) {
-            return clazz.cast(io.realm.DrawPointRealmProxy.createDetachedCopy((com.hosung.drawpadandepubreader.models.DrawPoint) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawNote.class)) {
+            return clazz.cast(io.realm.DrawNoteRealmProxy.createDetachedCopy((com.hosung.drawpadandepubreader.models.DrawNote) realmObject, 0, maxDepth, cache));
         }
         if (clazz.equals(com.hosung.drawpadandepubreader.models.DrawPath.class)) {
             return clazz.cast(io.realm.DrawPathRealmProxy.createDetachedCopy((com.hosung.drawpadandepubreader.models.DrawPath) realmObject, 0, maxDepth, cache));

@@ -24,12 +24,12 @@
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
         "source": "/Users/mac/.android/build-cache/26aa1d07edd793fa318c755948b9733009e3e61d/output/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
@@ -90,6 +90,10 @@
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/row_chapter.xml",
+        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/layout/row_chapter.xml"
     },
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
@@ -236,12 +240,12 @@
         "source": "/Users/mac/.android/build-cache/26aa1d07edd793fa318c755948b9733009e3e61d/output/res/layout/design_navigation_item_separator.xml"
     },
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/layout/abc_dialog_title_material.xml"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
