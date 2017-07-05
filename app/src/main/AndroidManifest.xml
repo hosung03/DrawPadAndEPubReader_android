@@ -35,9 +35,10 @@
             android:theme="@style/AppTheme.Dark" />
         <activity
             android:name=".DrawPadActivity"
-            android:theme="@style/AppTheme"
-            android:label="@string/title_activity_draw_pad">
-        </activity>
+            android:label="@string/title_activity_draw_pad"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".MyEPubReaderActivity"
+            android:configChanges="orientation|screenSize"></activity>
     </application>
 
 </manifest>

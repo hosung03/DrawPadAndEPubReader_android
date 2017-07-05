@@ -3521,8 +3521,8 @@ containing a value of this type.
         public static final int minutesLeft=0x7f0e00ac;
         public static final int multiply=0x7f0e0027;
         public static final int navigation=0x7f0e007f;
-        public static final int navigation_draw=0x7f0e00fd;
-        public static final int navigation_erase=0x7f0e00fe;
+        public static final int navigation_draw=0x7f0e00fc;
+        public static final int navigation_erase=0x7f0e00fd;
         public static final int navigation_header_container=0x7f0e009d;
         public static final int negative=0x7f0e0096;
         public static final int never=0x7f0e0044;
@@ -3542,7 +3542,6 @@ containing a value of this type.
         public static final int optmenuColor=0x7f0e00f6;
         public static final int optmenuFont=0x7f0e00fb;
         public static final int optmenuSave=0x7f0e00f9;
-        public static final int optmenuSpeaker=0x7f0e00fc;
         public static final int optmenuTOC=0x7f0e00fa;
         public static final int orientationLayout=0x7f0e00f0;
         public static final int packed=0x7f0e0012;

@@ -26,6 +26,8 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.squareup.otto.Subscribe;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -45,6 +47,7 @@ import hosung.epublib.smil.TextElement;
 import hosung.epublib.txtsel.TextSelectionSupport;
 import hosung.epublib.util.AppUtil;
 import hosung.epublib.util.FileUtil;
+import hosung.epublib.util.HighlightUtil;
 import hosung.epublib.util.UiUtil;
 
 /**
@@ -54,13 +57,13 @@ import hosung.epublib.util.UiUtil;
 
 public class EPubPageFragment extends Fragment {
 
-    public static final String KEY_FRAGMENT_FOLIO_POSITION = "POSITION";
-    public static final String KEY_FRAGMENT_FOLIO_BOOK_TITLE = "BOOK_TITLE";
+    public static final String KEY_FRAGMENT_EPUB_POSITION = "EPUB_POSITION";
+    public static final String KEY_FRAGMENT_EPUB_BOOK_TITLE = "EPUB_BOOK_TITLE";
     public static final String KEY_FRAGMENT_EPUB_FILE_NAME = "EPUB_FILE_NAME";
-    private static final String KEY_IS_SMIL_AVAILABLE = "IS_SMIL_AVAILABLE";
+    private static final String KEY_IS_SMIL_AVAILABLE = "KEY_IS_SMIL_AVAILABLE";
     private static final String KEY_HTML = "KEY_HTML";
-    public static final String SP_FOLIO_PAGE_FRAGMENT = "SP_FOLIO_PAGE_FRAGMENT";
-    public static final String TAG = EPubPageFragment.class.getSimpleName();
+    public static final String SP_EPUB_PAGE_FRAGMENT = "SP_EPUB_PAGE_FRAGMENT";
+    public static final String TAG = "EPubPageFragment";
 
     private static final int ACTION_ID_COPY = 1001;
     private static final int ACTION_ID_SHARE = 1002;
@@ -80,17 +83,20 @@ public class EPubPageFragment extends Fragment {
     private String mBookTitle;
     private String mHtmlContent;
 
-
     public static interface EPubPageFragmentCallback {
         String getChapterHtmlContent(int position);
 
-        void hideOrshowToolBar();
-
-        void hideToolBarIfVisible();
+//        void hideOrshowToolBar();
+//
+//        void hideToolBarIfVisible();
 
         void setPagerToPosition(String href);
 
         void setLastWebViewPosition(int position);
+
+        void insertHighlight(Highlight highlight);
+
+        ArrayList<Highlight> getAllHighlights(String bookId);
     }
 
     private View mRootView;
@@ -122,8 +128,8 @@ public class EPubPageFragment extends Fragment {
     public static EPubPageFragment newInstance(int position, String bookTitle, String epubFileName, ArrayList<TextElement> textElementArrayList, boolean isSmileAvailable) {
         EPubPageFragment fragment = new EPubPageFragment();
         Bundle args = new Bundle();
-        args.putInt(KEY_FRAGMENT_FOLIO_POSITION, position);
-        args.putString(KEY_FRAGMENT_FOLIO_BOOK_TITLE, bookTitle);
+        args.putInt(KEY_FRAGMENT_EPUB_POSITION, position);
+        args.putString(KEY_FRAGMENT_EPUB_BOOK_TITLE, bookTitle);
         args.putString(KEY_FRAGMENT_EPUB_FILE_NAME, epubFileName);
         args.putParcelableArrayList(KEY_TEXT_ELEMENTS, textElementArrayList);
         args.putBoolean(KEY_IS_SMIL_AVAILABLE, isSmileAvailable);
@@ -135,16 +141,16 @@ public class EPubPageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         if ((savedInstanceState != null)
-                && savedInstanceState.containsKey(KEY_FRAGMENT_FOLIO_POSITION)
-                && savedInstanceState.containsKey(KEY_FRAGMENT_FOLIO_BOOK_TITLE)) {
-            mPosition = savedInstanceState.getInt(KEY_FRAGMENT_FOLIO_POSITION);
-            mBookTitle = savedInstanceState.getString(KEY_FRAGMENT_FOLIO_BOOK_TITLE);
+                && savedInstanceState.containsKey(KEY_FRAGMENT_EPUB_POSITION)
+                && savedInstanceState.containsKey(KEY_FRAGMENT_EPUB_BOOK_TITLE)) {
+            mPosition = savedInstanceState.getInt(KEY_FRAGMENT_EPUB_POSITION);
+            mBookTitle = savedInstanceState.getString(KEY_FRAGMENT_EPUB_BOOK_TITLE);
             mEpubFileName = savedInstanceState.getString(KEY_FRAGMENT_EPUB_FILE_NAME);
             mIsSmilAvailable = savedInstanceState.getBoolean(KEY_IS_SMIL_AVAILABLE);
             mTextElementList = savedInstanceState.getParcelableArrayList(KEY_TEXT_ELEMENTS);
         } else {
-            mPosition = getArguments().getInt(KEY_FRAGMENT_FOLIO_POSITION);
-            mBookTitle = getArguments().getString(KEY_FRAGMENT_FOLIO_BOOK_TITLE);
+            mPosition = getArguments().getInt(KEY_FRAGMENT_EPUB_POSITION);
+            mBookTitle = getArguments().getString(KEY_FRAGMENT_EPUB_BOOK_TITLE);
             mEpubFileName = getArguments().getString(KEY_FRAGMENT_EPUB_FILE_NAME);
             mIsSmilAvailable = getArguments().getBoolean(KEY_IS_SMIL_AVAILABLE);
             mTextElementList = getArguments().getParcelableArrayList(KEY_TEXT_ELEMENTS);
@@ -489,18 +495,17 @@ public class EPubPageFragment extends Fragment {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt(KEY_FRAGMENT_FOLIO_POSITION, mPosition);
+        outState.putInt(KEY_FRAGMENT_EPUB_POSITION, mPosition);
         outState.putString(KEY_FRAGMENT_EPUB_FILE_NAME, mEpubFileName);
 
         getCustomSharedPrefs().edit().putString(KEY_HTML + mPosition, mHtmlContent).apply();
     }
 
     private SharedPreferences getCustomSharedPrefs() {
-        return getActivity().getSharedPreferences(SP_FOLIO_PAGE_FRAGMENT, Context.MODE_PRIVATE);
+        return getActivity().getSharedPreferences(SP_EPUB_PAGE_FRAGMENT, Context.MODE_PRIVATE);
     }
 
-
-    //@Subscribe
+    @Subscribe
     public void reload(ReloadData reloadData) {
         if (isCurrentFragment()) {
             mLastWebviewScrollpos = mWebview.getScrollY();
@@ -518,7 +523,7 @@ public class EPubPageFragment extends Fragment {
 
     }
 
-    //@Subscribe
+    @Subscribe
     public void highLightString(Integer position) {
         if (isAdded()) {
             if (mTextElementList != null) {
@@ -531,7 +536,7 @@ public class EPubPageFragment extends Fragment {
         }
     }
 
-    //@Subscribe
+    @Subscribe
     public void getTextSentence(Boolean isSpeaking) {
         if (isCurrentFragment()) {
             mIsSpeaking = true;
@@ -539,7 +544,7 @@ public class EPubPageFragment extends Fragment {
         }
     }
 
-    //@Subscribe
+    @Subscribe
     public void setStyle(String style) {
         if (isAdded()) {
             mWebview.loadUrl(String.format(getString(R.string.setmediaoverlaystyle), style));
@@ -601,18 +606,19 @@ public class EPubPageFragment extends Fragment {
                 break;
         }
 
+        htmlContent = htmlContent.replace("<html ", "<html class=\"" + classes + "\" ");
         // have to change ....
-//        htmlContent = htmlContent.replace("<html ", "<html class=\"" + classes + "\" ");
 //        ArrayList<Highlight> highlights = HighLightTable.getAllHighlights(mBookTitle);
-//        for (Highlight highlight : highlights) {
-//            String highlightStr =
-//                    "<highlight id=\"" + highlight.getHighlightId() +
-//                            "\" onclick=\"callHighlightURL(this);\" class=\"" +
-//                            highlight.getType() + "\">" + highlight.getContent() + "</highlight>";
-//            String searchStr = highlight.getContentPre() +
-//                    "" + highlight.getContent() + "" + highlight.getContentPost();
-//            htmlContent = htmlContent.replaceFirst(searchStr, highlightStr);
-//        }
+        ArrayList<Highlight> highlights = ((EPubReaderActivity) getActivity()).getAllHighlights(mBookTitle);
+        for (Highlight highlight : highlights) {
+            String highlightStr =
+                    "<highlight id=\"" + highlight.getHighlightId() +
+                            "\" onclick=\"callHighlightURL(this);\" class=\"" +
+                            highlight.getType() + "\">" + highlight.getContent() + "</highlight>";
+            String searchStr = highlight.getContentPre() +
+                    "" + highlight.getContent() + "" + highlight.getContentPost();
+            htmlContent = htmlContent.replaceFirst(searchStr, highlightStr);
+        }
         return htmlContent;
     }
 
@@ -795,11 +801,11 @@ public class EPubPageFragment extends Fragment {
     @JavascriptInterface
     public void getHtmlAndSaveHighlight(String html) {
         if (html != null && mHighlightMap != null) {
-//            Highlight highlight =
-//                    HighlightUtil.matchHighlight(html, mHighlightMap.get("id"), mBookTitle, mPosition);
-//            highlight.setCurrentWebviewScrollPos(mWebview.getScrollY());
-//            highlight = ((EPubReaderActivity) getActivity()).setCurrentPagerPostion(highlight);
-//            HighLightTable.insertHighlight(highlight);
+            Highlight highlight =
+                    HighlightUtil.matchHighlight(html, mHighlightMap.get("id"), mBookTitle, mPosition);
+            highlight.setCurrentWebviewScrollPos(mWebview.getScrollY());
+            highlight = ((EPubReaderActivity) getActivity()).setCurrentPagerPostion(highlight);
+            ((EPubReaderActivity) getActivity()).insertHighlight(highlight);
         }
     }
 
@@ -818,6 +824,7 @@ public class EPubPageFragment extends Fragment {
 //        if (id != null) {
 //            HighLightTable.deleteHighlight(id);
 //        }
+        Log.d("EPubPageFragment","call getRemovedHighlightId");
     }
 
     @JavascriptInterface
@@ -825,6 +832,7 @@ public class EPubPageFragment extends Fragment {
 //        if (id != null) {
 //            HighLightTable.updateHighlightStyle(id, style);
 //        }
+        Log.d("EPubPageFragment","call getUpdatedHighlightId");
     }
 
     public void removeCallback() {
@@ -835,7 +843,7 @@ public class EPubPageFragment extends Fragment {
         mHandler.postDelayed(mHideSeekbarRunnable, 3000);
     }
 
-    //@Subscribe
+    @Subscribe
     public void resetCurrentIndex(RewindIndex resetIndex) {
         if (isCurrentFragment()) {
             mWebview.loadUrl("javascript:alert(rewindCurrentIndex())");
@@ -851,7 +859,7 @@ public class EPubPageFragment extends Fragment {
         mPos = pos;
     }
 
-    //@Subscribe
+    @Subscribe
     public void setTextElementList(ArrayList<TextElement> textElementList) {
         if (textElementList != null && textElementList.size() > 0) {
             mIsSmilAvailable = true;
@@ -859,7 +867,7 @@ public class EPubPageFragment extends Fragment {
         }
     }
 
-    //@Subscribe
+    @Subscribe
     public void setWebviewToHighlightPos(final WebViewPosition webViewPosition) {
         mWebviewposition = webViewPosition;
         if (isAdded()) {

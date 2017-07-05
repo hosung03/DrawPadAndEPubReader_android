@@ -1013,8 +1013,8 @@ int id mini 0x7f0e003e
 int id minutesLeft 0x7f0e00ac
 int id multiply 0x7f0e0027
 int id navigation 0x7f0e007f
-int id navigation_draw 0x7f0e00fd
-int id navigation_erase 0x7f0e00fe
+int id navigation_draw 0x7f0e00fc
+int id navigation_erase 0x7f0e00fd
 int id navigation_header_container 0x7f0e009d
 int id negative 0x7f0e0096
 int id never 0x7f0e0044
@@ -1034,7 +1034,6 @@ int id optmenuClear 0x7f0e00f5
 int id optmenuColor 0x7f0e00f6
 int id optmenuFont 0x7f0e00fb
 int id optmenuSave 0x7f0e00f9
-int id optmenuSpeaker 0x7f0e00fc
 int id optmenuTOC 0x7f0e00fa
 int id orientationLayout 0x7f0e00f0
 int id packed 0x7f0e0012

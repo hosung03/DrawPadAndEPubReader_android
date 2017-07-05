@@ -9,12 +9,8 @@
         android:id="@+id/optmenuFont"
         android:title="Font"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/optmenuSpeaker"
-        android:title="Audio"
-        app:showAsAction="never" />
     <!--<item-->
-        <!--android:id="@+id/optmenuBackImage"-->
-        <!--android:title="Open image as background"-->
+        <!--android:id="@+id/optmenuSpeaker"-->
+        <!--android:title="Audio"-->
         <!--app:showAsAction="never" />-->
 </menu>

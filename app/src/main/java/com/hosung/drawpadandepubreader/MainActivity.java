@@ -36,10 +36,12 @@ import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 import io.realm.SyncUser;
+import io.realm.exceptions.RealmException;
 
 /**
  * Created by Hosung, Lee on 2017. 5. 23..
  */
+
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -246,11 +248,10 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     int position = sectionAdapter.getPositionInSection(itemHolder.getAdapterPosition());
                     if (title.equals(getString(R.string.epub_list))) {
-//                        Toast.makeText(MainActivity.this, "I am going to implement this feature soon.",
-//                                Toast.LENGTH_SHORT).show();
                         EPubItem ePubItem = (EPubItem) list.get(position);
 
-                        Intent intent = new Intent(MainActivity.this, EPubReaderActivity.class);
+                        //Intent intent = new Intent(MainActivity.this, EPubReaderActivity.class);
+                        Intent intent = new Intent(MainActivity.this, MyEPubReaderActivity.class);
                         intent.putExtra("EPubFilePath", ePubItem.getFileName());
                         intent.putExtra("EPubSourceType", EPubReaderActivity.EpubSourceType.ASSESTS);
                         startActivityForResult(intent, REQUEST_EPUBREAD);
@@ -385,11 +386,15 @@ public class MainActivity extends AppCompatActivity {
         Realm realm = Realm.getDefaultInstance();
         RealmConfiguration realmConfig = realm.getConfiguration();
         realm.close();
+        try {
+            Realm.deleteRealm(realmConfig);
+        } catch (RealmException e) {
+            e.printStackTrace();
+        }
         SyncUser user = SyncUser.currentUser();
         if (user != null) {
             user.logout();
         }
-        Realm.deleteRealm(realmConfig);
     }
 
     public static void createInitialDataIfNeeded() {

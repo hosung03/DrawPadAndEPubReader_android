@@ -49,8 +49,8 @@ public class ObservableWebView extends WebView {
 
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
-        mActivityCallback = (EPubReaderActivity) getContext();
-        mActivityCallback.hideToolBarIfVisible();
+        //mActivityCallback = (EPubReaderActivity) getContext();
+        //mActivityCallback.hideToolBarIfVisible();
         // Log.d("in ScrollChange","l"+l+"t"+t);
         if (mScrollListener != null) mScrollListener.onScrollChange(t);
         super.onScrollChanged(l, t, oldl, oldt);
@@ -88,9 +88,9 @@ public class ObservableWebView extends WebView {
                 mEPubPageFragment.removeCallback();
                 break;
             case MotionEvent.ACTION_UP:
-                if (!mMoveOccured[0]) {
-                    mActivityCallback.hideOrshowToolBar();
-                }
+//                if (!mMoveOccured[0]) {
+//                    mActivityCallback.hideOrshowToolBar();
+//                }
 
                /* boolean isHorizontal = true;
                 if (isHorizontal) {

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml
@@ -28,7 +28,7 @@ ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/mai
 	android:name
 		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:7:22-78
 application
-ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:9:5-41:19
+ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:9:5-42:19
 MERGED from [DrawPadAndEPubReader_android:sectionlib:unspecified] /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/sectionlib/build/intermediates/bundles/default/AndroidManifest.xml:11:5-15:19
 MERGED from [DrawPadAndEPubReader_android:colorpickerlib:unspecified] /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/colorpickerlib/build/intermediates/bundles/default/AndroidManifest.xml:11:5-15:19
 MERGED from [DrawPadAndEPubReader_android:epublib:unspecified] /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/AndroidManifest.xml:11:5-18:19
@@ -98,13 +98,19 @@ ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/mai
 	android:name
 		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:33:13-50
 activity#com.hosung.drawpadandepubreader.DrawPadActivity
-ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:36:9-40:20
+ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:36:9-39:47
 	android:label
-		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:39:13-60
+		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:38:13-60
 	android:theme
-		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:38:13-44
+		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:39:13-44
 	android:name
 		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:37:13-44
+activity#com.hosung.drawpadandepubreader.MyEPubReaderActivity
+ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:40:9-41:71
+	android:configChanges
+		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:41:13-59
+	android:name
+		ADDED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml:40:19-55
 uses-sdk
 INJECTED from /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [DrawPadAndEPubReader_android:sectionlib:unspecified] /GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/sectionlib/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41

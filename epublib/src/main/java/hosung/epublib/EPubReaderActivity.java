@@ -1,21 +1,13 @@
 package hosung.epublib;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.graphics.Color;
-import android.os.Build;
-import android.os.Handler;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -23,10 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.LinearInterpolator;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
@@ -77,7 +66,7 @@ public class EPubReaderActivity extends AppCompatActivity implements
     private boolean mIsSmilAvailable;
     private EPubPageFragmentAdapter mEPubPageFragmentAdapter;
     private int mWebViewScrollPosition;
-    //private ConfigBottomSheetDialogFragment mConfigBottomSheetDialogFragment;
+    private ConfigBottomSheetDialogFragment mConfigBottomSheetDialogFragment;
     //private AudioViewBottomSheetDailogFragment mAudioBottomSheetDialogFragment;
     private boolean mIsbookOpened =false;
 
@@ -108,6 +97,7 @@ public class EPubReaderActivity extends AppCompatActivity implements
         mDrawLayout = (DrawerLayout) findViewById(R.id.epubDrawer);
         mTocList = (RecyclerView) findViewById(R.id.epubTocList);
 
+        BUS.register(this);
     }
 
     @Override
@@ -123,11 +113,18 @@ public class EPubReaderActivity extends AppCompatActivity implements
             onBackPressed();
             return true;
         }else if (id == R.id.optmenuTOC) {
+            if (mDrawLayout.isDrawerOpen(Gravity.LEFT)){
+                mDrawLayout.closeDrawer(Gravity.LEFT, true);
+            } else {
+                mDrawLayout.openDrawer(Gravity.LEFT, true);
+            }
             return true;
         } else if (id == R.id.optmenuFont) {
+            mConfigBottomSheetDialogFragment = new ConfigBottomSheetDialogFragment();
+            mConfigBottomSheetDialogFragment.show(getSupportFragmentManager(), mConfigBottomSheetDialogFragment.getTag());
             return true;
-        } else if (id == R.id.optmenuSpeaker) {
-            return true;
+//        } else if (id == R.id.optmenuSpeaker) {
+//            return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -255,14 +252,9 @@ public class EPubReaderActivity extends AppCompatActivity implements
     }
 
     @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        configDrawerLayoutButtons();
-    }
-
-    @Override
     public void onBackPressed() {
         saveBookState();
+        finish();
         super.onBackPressed();
     }
 
@@ -300,24 +292,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
 //        }
     }
 
-    private void configDrawerLayoutButtons() {
-//        findViewById(R.id.btn_close).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                saveBookState();
-//                finish();
-//            }
-//        });
-//
-//        findViewById(R.id.btn_config).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mConfigBottomSheetDialogFragment = new ConfigBottomSheetDialogFragment();
-//                mConfigBottomSheetDialogFragment.show(getSupportFragmentManager(), mConfigBottomSheetDialogFragment.getTag());
-//            }
-//        });
-    }
-
     private void saveBookState() {
         AppUtil.saveBookState(EPubReaderActivity.this, mBook, mEPubPageViewPager.getCurrentItem(), mWebViewScrollPosition);
     }
@@ -343,14 +317,39 @@ public class EPubReaderActivity extends AppCompatActivity implements
         return readHTmlString(position);
     }
 
-    @Override
-    public void hideOrshowToolBar() {
+//    @Override
+//    public void hideOrshowToolBar() {
+//
+//    }
+//
+//    @Override
+//    public void hideToolBarIfVisible() {
+//
+//    }
 
+    public void setPagerToPosition(String href) {
+        for (int i = 0; i < mSpineReferences.size(); i++) {
+            if (AppUtil.compareUrl(href, mSpineReferences.get(i).getResource().getHref())) {
+                mEPubPageViewPager.setCurrentItem(i, true);
+                break;
+            }
+        }
     }
 
     @Override
-    public void hideToolBarIfVisible() {
+    public void setLastWebViewPosition(int position) {
+        mWebViewScrollPosition = position;
+    }
 
+    @Override
+    public ArrayList<Highlight> getAllHighlights(String bookId) {
+        // make your version
+        return null;
+    }
+
+    @Override
+    public void insertHighlight(Highlight highlight){
+        // make your version
     }
 
     private String readHTmlString(int position) {
@@ -365,23 +364,9 @@ public class EPubReaderActivity extends AppCompatActivity implements
         return html;
     }
 
-    public void setPagerToPosition(String href) {
-        for (int i = 0; i < mSpineReferences.size(); i++) {
-            if (AppUtil.compareUrl(href, mSpineReferences.get(i).getResource().getHref())) {
-                mEPubPageViewPager.setCurrentItem(i, true);
-                break;
-            }
-        }
-    }
-
     public Highlight setCurrentPagerPostion(Highlight highlight) {
         highlight.setCurrentPagerPostion(mEPubPageViewPager.getCurrentItem());
         return highlight;
-    }
-
-    //@Override
-    public void setLastWebViewPosition(int position) {
-        mWebViewScrollPosition = position;
     }
 
     public String getEpubFileName() {
@@ -476,10 +461,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
                             mChapterPosition = mSelectedChapterPosition;
                             int spineRefrencesPos = AppUtil.getSpineRefrecePos(mSpineReferences, mTocReferences.get(mChapterPosition));
                             mEPubPageViewPager.setCurrentItem(spineRefrencesPos);
-//                            Toast.makeText(EPubReaderActivity.this,
-//                                    "mSelectedChapterPosition"+String.valueOf(mSelectedChapterPosition)
-//                                    , Toast.LENGTH_LONG).show();
-                            return;
                         }
                     }
                 }
@@ -491,4 +472,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
             return mTOCReferences.size();
         }
     }
+
+
 }
