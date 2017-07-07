@@ -123,8 +123,9 @@ public class EPubReaderActivity extends AppCompatActivity implements
             mConfigBottomSheetDialogFragment = new ConfigBottomSheetDialogFragment();
             mConfigBottomSheetDialogFragment.show(getSupportFragmentManager(), mConfigBottomSheetDialogFragment.getTag());
             return true;
-//        } else if (id == R.id.optmenuSpeaker) {
-//            return true;
+        } else if (id == R.id.optmenuHighlightList) {
+            viewHighLightList(mBook.getTitle());
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -142,7 +143,7 @@ public class EPubReaderActivity extends AppCompatActivity implements
             public void run() {
                 mBook = FileUtil.saveEpubFile(EPubReaderActivity.this, mEpubSourceType, mEpubFilePath,
                         mEpubRawId, mEpubFileName);
-                mBookeFilePath = FileUtil.getFolioEpubFilePath(mEpubSourceType, mEpubFilePath, mEpubFileName);
+                mBookeFilePath = FileUtil.getEpubFilePath(mEpubSourceType, mEpubFilePath, mEpubFileName);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -152,8 +153,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
                 });
             }
         }).start();
-//
-//        new DbAdapter(FolioActivity.this)
     }
 
     private void loadBook() {
@@ -183,7 +182,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
                 }
             }
         }
-        //((TextView) findViewById(R.id.lbl_center)).setText(mSpineReferences.get(0).getResource().getTitle());
     }
 
     private void configEPubReder() {
@@ -197,7 +195,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
             @Override
             public void onPageSelected(int position) {
                 mChapterPosition = position;
-                //((TextView) findViewById(R.id.lbl_center)).setText(mSpineReferences.get(position).getResource().getTitle());
             }
 
             @Override
@@ -317,15 +314,15 @@ public class EPubReaderActivity extends AppCompatActivity implements
         return readHTmlString(position);
     }
 
-//    @Override
-//    public void hideOrshowToolBar() {
-//
-//    }
-//
-//    @Override
-//    public void hideToolBarIfVisible() {
-//
-//    }
+    @Override
+    public void hideOrshowToolBar() {
+
+    }
+
+    @Override
+    public void hideToolBarIfVisible() {
+
+    }
 
     public void setPagerToPosition(String href) {
         for (int i = 0; i < mSpineReferences.size(); i++) {
@@ -342,23 +339,29 @@ public class EPubReaderActivity extends AppCompatActivity implements
     }
 
     @Override
-    public ArrayList<Highlight> getAllHighlights(String bookId) {
-        // make your version
-        return null;
-    }
+    public ArrayList<Highlight> getAllHighlights(String bookId) { return null; }
 
     @Override
-    public void insertHighlight(Highlight highlight){
-        // make your version
-    }
+    public void insertHighlight(Highlight highlight){}
+
+    @Override
+    public void updateHighlight(Highlight highlight) {}
+
+    @Override
+    public void updateHighlightStyle(String id, String style) {}
+
+    @Override
+    public void deleteHighlight(String id){}
+
+    public void viewHighLightList(String bookId){}
 
     private String readHTmlString(int position) {
         String pageHref = mSpineReferences.get(position).getResource().getHref();
-        String opfpath = AppUtil.getPathOPF(FileUtil.getFolioEpubFolderPath(mEpubFileName), EPubReaderActivity.this);
-        if (AppUtil.checkOPFInRootDirectory(FileUtil.getFolioEpubFolderPath(mEpubFileName), EPubReaderActivity.this)) {
-            pageHref = FileUtil.getFolioEpubFolderPath(mEpubFileName) + "/" + pageHref;
+        String opfpath = AppUtil.getPathOPF(FileUtil.getEpubFolderPath(mEpubFileName), EPubReaderActivity.this);
+        if (AppUtil.checkOPFInRootDirectory(FileUtil.getEpubFolderPath(mEpubFileName), EPubReaderActivity.this)) {
+            pageHref = FileUtil.getEpubFolderPath(mEpubFileName) + "/" + pageHref;
         } else {
-            pageHref = FileUtil.getFolioEpubFolderPath(mEpubFileName) + "/" + opfpath + "/" + pageHref;
+            pageHref = FileUtil.getEpubFolderPath(mEpubFileName) + "/" + opfpath + "/" + pageHref;
         }
         String html = EpubManipulator.readPage(pageHref);
         return html;

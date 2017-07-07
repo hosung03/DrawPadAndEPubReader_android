@@ -8,6 +8,7 @@
     <color name="black">#000000</color>
     <color name="lite_blue">#42a5f5</color>
     <color name="iron">#CCCCCC</color>
+    <color name="gray">#B6B6B6</color>
 
     <color name="app_background_color">#FAFAFA</color>
     <color name="divider_color">#C7C7CC</color>

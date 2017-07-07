@@ -3,7 +3,8 @@
     <string name="title_activity_login">Sign in</string>
     <string name="title_activity_signup">Sign up</string>
     <string name="title_activity_objsetting">Remote DB Setting</string>
-    <!--<string name="title_activity_settings">Remote DB Setting</string>-->
+    <string name="title_activity_highlight">EPub Hightlight</string>
+    <string name="title_activity_epubreader">EPub Reader</string>
 
     <!-- Strings related to login -->
 

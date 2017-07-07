@@ -49,7 +49,11 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.hosung.drawpadandepubreader.MyEPubReaderActivity"
-            android:configChanges="orientation|screenSize" />
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_epubreader" />
+        <activity
+            android:name="com.hosung.drawpadandepubreader.HighlightActivity"
+            android:label="@string/title_activity_highlight" />
         <activity
             android:name="hosung.epublib.EPubReaderActivity"
             android:configChanges="orientation|screenSize" />

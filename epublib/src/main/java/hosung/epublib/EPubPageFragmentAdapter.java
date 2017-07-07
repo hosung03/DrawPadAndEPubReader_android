@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.squareup.otto.Subscribe;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +46,7 @@ public class EPubPageFragmentAdapter extends FragmentStatePagerAdapter {
         return mSpineReferences.size();
     }
 
-    //@Subscribe
+    @Subscribe
     public void setTextElementList(ArrayList<TextElement> textElementList) {
         if (textElementList != null && textElementList.size() > 0) {
             mIsSmileAvailable = true;

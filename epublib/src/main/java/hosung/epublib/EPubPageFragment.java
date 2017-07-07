@@ -86,15 +86,21 @@ public class EPubPageFragment extends Fragment {
     public static interface EPubPageFragmentCallback {
         String getChapterHtmlContent(int position);
 
-//        void hideOrshowToolBar();
-//
-//        void hideToolBarIfVisible();
+        void hideOrshowToolBar();
+
+        void hideToolBarIfVisible();
 
         void setPagerToPosition(String href);
 
         void setLastWebViewPosition(int position);
 
         void insertHighlight(Highlight highlight);
+
+        void updateHighlight(Highlight highlight);
+
+        void updateHighlightStyle(String id, String style);
+
+        void deleteHighlight(String id);
 
         ArrayList<Highlight> getAllHighlights(String bookId);
     }
@@ -371,9 +377,9 @@ public class EPubPageFragment extends Fragment {
 
         mWebview.getSettings().setDefaultTextEncodingName("utf-8");
         String opfPath
-                = AppUtil.getPathOPF(FileUtil.getFolioEpubFolderPath(mEpubFileName), mContext);
+                = AppUtil.getPathOPF(FileUtil.getEpubFolderPath(mEpubFileName), mContext);
         String baseUrl
-                = "file://" + FileUtil.getFolioEpubFolderPath(mEpubFileName) + "/" + opfPath + "//";
+                = "file://" + FileUtil.getEpubFolderPath(mEpubFileName) + "/" + opfPath + "//";
         mWebview.loadDataWithBaseURL(baseUrl, htmlContent, "text/html", "UTF-8", null);
         ((EPubReaderActivity) getActivity()).setLastWebViewPosition(mScrollY);
     }
@@ -513,9 +519,9 @@ public class EPubPageFragment extends Fragment {
             final WebView webView = (WebView) mRootView.findViewById(R.id.contentWebView);
             String htmlContent = getHtmlContent(mActivityCallback.getChapterHtmlContent(mPosition));
             String opfPath
-                    = AppUtil.getPathOPF(FileUtil.getFolioEpubFolderPath(mEpubFileName), mContext);
+                    = AppUtil.getPathOPF(FileUtil.getEpubFolderPath(mEpubFileName), mContext);
             String baseUrl
-                    = "file://" + FileUtil.getFolioEpubFolderPath(mEpubFileName) + "/" + opfPath + "//";
+                    = "file://" + FileUtil.getEpubFolderPath(mEpubFileName) + "/" + opfPath + "//";
             webView.loadDataWithBaseURL(baseUrl, htmlContent, "text/html", "UTF-8", null);
             updatePagesLeftTextBg();
 
@@ -821,18 +827,20 @@ public class EPubPageFragment extends Fragment {
 
     @JavascriptInterface
     public void getRemovedHighlightId(String id) {
-//        if (id != null) {
-//            HighLightTable.deleteHighlight(id);
-//        }
+        if (id != null) {
+            //HighLightTable.deleteHighlight(id);
+            ((EPubReaderActivity) getActivity()).deleteHighlight(id);
+        }
         Log.d("EPubPageFragment","call getRemovedHighlightId");
     }
 
     @JavascriptInterface
     public void getUpdatedHighlightId(String id, String style) {
-//        if (id != null) {
-//            HighLightTable.updateHighlightStyle(id, style);
-//        }
-        Log.d("EPubPageFragment","call getUpdatedHighlightId");
+        if (id != null) {
+            //HighLightTable.updateHighlightStyle(id, style);
+            ((EPubReaderActivity) getActivity()).updateHighlightStyle(id, style);
+        }
+        Log.d("EPubPageFragment","call getUpdatedHighlightId"+style);
     }
 
     public void removeCallback() {

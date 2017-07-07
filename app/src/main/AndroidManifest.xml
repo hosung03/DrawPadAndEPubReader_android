@@ -37,8 +37,12 @@
             android:name=".DrawPadActivity"
             android:label="@string/title_activity_draw_pad"
             android:theme="@style/AppTheme" />
-        <activity android:name=".MyEPubReaderActivity"
-            android:configChanges="orientation|screenSize"></activity>
+        <activity
+            android:name=".MyEPubReaderActivity"
+            android:label="@string/title_activity_epubreader"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".HighlightActivity"
+            android:label="@string/title_activity_highlight"/>
     </application>
 
 </manifest>

@@ -153,7 +153,7 @@ public class AppUtil {
         SmilFile smilFile = null;
         List<AudioElement> audioElementArrayList;
         List<TextElement> textElementList;
-        String epubFolderPath = FileUtil.getFolioEpubFolderPath(epubFileName);
+        String epubFolderPath = FileUtil.getEpubFolderPath(epubFileName);
 
         try {
             File f = null;

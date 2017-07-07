@@ -207,7 +207,7 @@ public class ObservableWebView extends WebView {
         };
     }
 
-    public void setFragment(EPubPageFragment folioPageFragment) {
-        mEPubPageFragment = folioPageFragment;
+    public void setFragment(EPubPageFragment epubPageFragment) {
+        mEPubPageFragment = epubPageFragment;
     }
 }

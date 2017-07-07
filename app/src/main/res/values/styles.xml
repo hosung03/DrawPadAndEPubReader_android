@@ -57,4 +57,9 @@
         <item name="android:textColorHint">@color/lite_blue</item>
         <item name="android:textSize">15sp</item>
     </style>
+
+    <style name="DialogCustomTheme" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
 </resources>

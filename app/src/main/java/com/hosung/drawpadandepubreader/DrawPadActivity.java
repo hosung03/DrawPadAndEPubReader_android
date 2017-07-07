@@ -140,7 +140,6 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //getMenuInflater().inflate(R.menu.menu_main, menu);
         getMenuInflater().inflate(R.menu.menu_drawpad, menu);
         return true;
     }
@@ -486,16 +485,6 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
         }
         colorPicker.setDefaultColorButton(currentColor);
 //        colorPicker.setOnChooseColorListener(new ColorPicker.OnChooseColorListener() {
-//            @Override
-//            public void onChooseColor(int position, int color) {
-//                currentColor = color;
-//            }
-//
-//            @Override
-//            public void onCancel() {
-//
-//            }
-//        });
         colorPicker.setOnFastChooseColorListener(new ColorPicker.OnFastChooseColorListener() {
             @Override
             public void setOnFastChooseColorListener(int position, int color) {

@@ -341,11 +341,11 @@ public class AudioViewBottomSheetDailogFragment extends BottomSheetDialogFragmen
                 mAudioElement = mEPubReaderActivity.getElement(0);
                 String filePath = mAudioElement.getSrc();
                 String folderPath =
-                        FileUtil.getFolioEpubFolderPath(mEPubReaderActivity.getEpubFileName());
+                        FileUtil.getEpubFolderPath(mEPubReaderActivity.getEpubFileName());
                 filePath = filePath.substring(2, filePath.length());
                 String opfpath
                         = AppUtil.getPathOPF(
-                        FileUtil.getFolioEpubFolderPath(mEPubReaderActivity.getEpubFileName()),
+                        FileUtil.getEpubFolderPath(mEPubReaderActivity.getEpubFileName()),
                         mEPubReaderActivity);
                 filePath = folderPath + "/" + opfpath + "/" + filePath;
                 mPlayer.setDataSource(filePath);
