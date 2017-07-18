@@ -1,4 +1,7 @@
-#Fri Jul 07 11:48:45 EDT 2017
-base.0=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Tue Jul 18 16:59:06 EDT 2017
+base.0=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b336bcdcfff72ed6d2f1c12109794768c5b65b91
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.1=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_46e620cf0750673b6d6db1393be30aa60d418f4c/classes.dex
+base.1=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_46e620cf0750673b6d6db1393be30aa60d418f4c
+file.0=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b336bcdcfff72ed6d2f1c12109794768c5b65b91/classes.dex
