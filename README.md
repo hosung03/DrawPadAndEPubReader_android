@@ -41,9 +41,6 @@ A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Sy
     public static String realmServerIP = "127.0.0.1"; // your Realm Object Server IP
     public static String realmID = "demo@localhost.io"; // your Login ID of the Realm Object Server
     public static String realmPasswd = "demo1234"; // your Login Password of the Realm Object Server
-    
-    static final String syncServerURL = "realm://"+realmServerIP+":9080/~/DrawPad1";
-    static final String syncAuthURL = "http://"+realmServerIP+":9080/auth";
   </code></pre>
 
 ## References
