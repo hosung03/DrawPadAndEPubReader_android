@@ -13,14 +13,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Locale;
 
-import hosung.epublib.EPubPageFragmentAdapter;
 import hosung.epublib.EPubReaderActivity;
 import hosung.epublib.model.Highlight;
 import hosung.epublib.model.ReloadData;
-import hosung.epublib.util.AppUtil;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
@@ -175,8 +172,6 @@ public class MyEPubReaderActivity extends EPubReaderActivity {
         ePubHighLight.setCurrentWebviewScrollPos(highlight.getCurrentWebviewScrollPos());
         ePubHighLight.setNote(highlight.getNote());
         realm.commitTransaction();
-
-        //curHighLightIDs.put(Integer.valueOf(ePubHighLight.getId()),false);
     }
 
     @Override
@@ -214,8 +209,6 @@ public class MyEPubReaderActivity extends EPubReaderActivity {
         realm.beginTransaction();
         ePubHighLight.deleteFromRealm();
         realm.commitTransaction();
-
-        //curHighLightIDs.remove(ePubHighLight.getId());
     }
 
     @Override
