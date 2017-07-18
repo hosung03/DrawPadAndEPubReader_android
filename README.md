@@ -22,6 +22,12 @@ A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Sy
   <img src="screenshot/Screenshot_3.png" width="200"/>
   <img src="screenshot/Screenshot_4.png" width="200"/>
 </p>
+<p align="center">
+  <img src="screenshot/Screenshot_6.png" width="200"/>
+  <img src="screenshot/Screenshot_7.png" width="200"/>
+  <img src="screenshot/Screenshot_8.png" width="200"/>
+  <img src="screenshot/Screenshot_9.png" width="200"/>
+</p>
 
 ## Prerequisites
 
