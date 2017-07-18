@@ -51,7 +51,8 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Created by Hosung, Lee on 2017. 6. 20..
+ * Created by mahavir
+ * Modifed by Hosung, Lee on 6/20/17
  */
 
 public class DirectionalViewpager extends ViewGroup {

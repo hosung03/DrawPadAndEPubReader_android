@@ -47,27 +47,23 @@ public class EPubReaderActivity extends AppCompatActivity implements
     }
 
     private DirectionalViewpager mEPubPageViewPager;
-//    private Toolbar mToolbar;
-//    public boolean mIsActionBarVisible;
-
     private EpubSourceType mEpubSourceType;
     private String mEpubFilePath;
     private String mEpubFileName;
     private int mEpubRawId;
-    private Book mBook;
+    protected Book mBook;
     private String mBookeFilePath;
     private ArrayList<TOCReference> mTocReferences;
     private List<SpineReference> mSpineReferences;
-    private List<AudioElement> mAudioElementArrayList;
     private List<TextElement> mTextElementList = new ArrayList<>();
 
     public boolean mIsSmilParsed = false;
-    private int mChapterPosition;
+    private int mChapterPosition = -1;
     private boolean mIsSmilAvailable;
-    private EPubPageFragmentAdapter mEPubPageFragmentAdapter;
+
+    protected EPubPageFragmentAdapter mEPubPageFragmentAdapter;
     private int mWebViewScrollPosition;
     private ConfigBottomSheetDialogFragment mConfigBottomSheetDialogFragment;
-    //private AudioViewBottomSheetDailogFragment mAudioBottomSheetDialogFragment;
     private boolean mIsbookOpened =false;
 
     private ProgressDialog progressDialog = null;
@@ -75,6 +71,8 @@ public class EPubReaderActivity extends AppCompatActivity implements
     private DrawerLayout mDrawLayout = null;
     private RecyclerView mTocList = null;
     private int mSelectedChapterPosition;
+
+    protected boolean mIsLoaded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,8 +129,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
     }
 
     private void initBook() {
-        Log.d(TAG,"initBook");
-
         progressDialog = new ProgressDialog(EPubReaderActivity.this, R.style.AppTheme_Dark_Dialog);
         progressDialog.setIndeterminate(true);
         progressDialog.setMessage("EPUB loading...");
@@ -161,6 +157,7 @@ public class EPubReaderActivity extends AppCompatActivity implements
         parseSmil();
 
         loadTOC();
+        mIsLoaded = true;
     }
 
     public void configRecyclerViews() {
@@ -189,17 +186,18 @@ public class EPubReaderActivity extends AppCompatActivity implements
         mEPubPageViewPager.addOnPageChangeListener(new DirectionalViewpager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+                //Log.d(TAG,"onPageScrolled");
             }
 
             @Override
             public void onPageSelected(int position) {
                 mChapterPosition = position;
+                //Log.d(TAG,"onPageSelected"+String.valueOf(position));
             }
 
             @Override
             public void onPageScrollStateChanged(int state) {
-
+                //Log.d(TAG,"onPageScrollStateChanged");
             }
         });
 
@@ -220,7 +218,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
             public void run() {
                 SmilFile smilFile = AppUtil.createSmilJson(EPubReaderActivity.this, mEpubFileName);
                 if (smilFile != null) {
-                    mAudioElementArrayList = smilFile.getAudioSegments();
                     mTextElementList = smilFile.getTextSegments();
                     mIsSmilAvailable = true;
                     EPubReaderActivity.BUS.post(mTextElementList);
@@ -238,14 +235,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
 
         }).start();
 
-    }
-
-    public AudioElement getElement(int position) {
-        if (mAudioElementArrayList != null) {
-            return mAudioElementArrayList.get(position);
-        } else {
-            return null;
-        }
     }
 
     @Override
@@ -282,11 +271,6 @@ public class EPubReaderActivity extends AppCompatActivity implements
     @Override
     protected void onDestroy() {
         super.onDestroy();
-//        if (mAudioBottomSheetDialogFragment != null) {
-//            mAudioBottomSheetDialogFragment.unRegisterBus();
-//            mAudioBottomSheetDialogFragment.stopAudioIfPlaying();
-//            mAudioBottomSheetDialogFragment = null;
-//        }
     }
 
     private void saveBookState() {
@@ -332,6 +316,9 @@ public class EPubReaderActivity extends AppCompatActivity implements
             }
         }
     }
+
+    @Override
+    public void checkHightlightCount(int count) {}
 
     @Override
     public void setLastWebViewPosition(int position) {
@@ -395,7 +382,16 @@ public class EPubReaderActivity extends AppCompatActivity implements
 
     public void loadTOC(){
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.epubTocList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        if (mTocReferences != null) {
+//            TOCAdapter tocAdapter = new TOCAdapter(mTocReferences, mSelectedChapterPosition);
+//            recyclerView.setAdapter(tocAdapter);
+//        }
+
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(llm);
+        //recyclerView.setHasFixedSize(true);
         if (mTocReferences != null) {
             TOCAdapter tocAdapter = new TOCAdapter(mTocReferences, mSelectedChapterPosition);
             recyclerView.setAdapter(tocAdapter);

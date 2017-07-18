@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.net.Uri;
@@ -21,8 +22,11 @@ import android.view.animation.AnimationUtils;
 import android.webkit.JavascriptInterface;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -103,6 +107,8 @@ public class EPubPageFragment extends Fragment {
         void deleteHighlight(String id);
 
         ArrayList<Highlight> getAllHighlights(String bookId);
+
+        void checkHightlightCount(int count);
     }
 
     private View mRootView;
@@ -123,13 +129,14 @@ public class EPubPageFragment extends Fragment {
     private Animation mFadeInAnimation, mFadeOutAnimation;
     private ArrayList<TextElement> mTextElementList;
 
-
     private int mPosition = -1;
     private String mEpubFileName = null;
     private boolean mIsSmilAvailable;
     private int mPos;
     private boolean mIsPageReloaded;
     private int mLastWebviewScrollpos;
+
+    private ProgressBar mLoadProgressbar;
 
     public static EPubPageFragment newInstance(int position, String bookTitle, String epubFileName, ArrayList<TextElement> textElementArrayList, boolean isSmileAvailable) {
         EPubPageFragment fragment = new EPubPageFragment();
@@ -168,6 +175,8 @@ public class EPubPageFragment extends Fragment {
         mMinutesLeftTextView = (TextView) mRootView.findViewById(R.id.minutesLeft);
         if (getActivity() instanceof EPubPageFragmentCallback)
             mActivityCallback = (EPubPageFragmentCallback) getActivity();
+
+        mLoadProgressbar = (ProgressBar) mRootView.findViewById(R.id.loadProgressbar);
 
         EPubReaderActivity.BUS.register(this);
 
@@ -217,6 +226,7 @@ public class EPubPageFragment extends Fragment {
                     }
                 });
 
+
         mWebview.getSettings().setJavaScriptEnabled(true);
         mWebview.setVerticalScrollBarEnabled(false);
         mWebview.getSettings().setAllowFileAccess(true);
@@ -238,6 +248,20 @@ public class EPubPageFragment extends Fragment {
         });
 
         mWebview.setWebViewClient(new WebViewClient() {
+
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                super.onReceivedError(view, request, error);
+                Toast.makeText(getActivity(), "Cannot load page", Toast.LENGTH_SHORT).show();
+                mLoadProgressbar.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                mLoadProgressbar.setVisibility(View.VISIBLE);
+            }
+
             @Override
             public void onPageFinished(WebView view, String url) {
                 if (isAdded()) {
@@ -299,10 +323,13 @@ public class EPubPageFragment extends Fragment {
             }
         });
 
-
         mWebview.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int progress) {
+                mLoadProgressbar.setProgress(progress);
+                if (mLoadProgressbar.getProgress() >= 100) {
+                    mLoadProgressbar.setVisibility(View.GONE);
+                }
 
                 if (view.getProgress() == 100) {
                     mWebview.postDelayed(new Runnable() {
@@ -380,6 +407,7 @@ public class EPubPageFragment extends Fragment {
                 = AppUtil.getPathOPF(FileUtil.getEpubFolderPath(mEpubFileName), mContext);
         String baseUrl
                 = "file://" + FileUtil.getEpubFolderPath(mEpubFileName) + "/" + opfPath + "//";
+
         mWebview.loadDataWithBaseURL(baseUrl, htmlContent, "text/html", "UTF-8", null);
         ((EPubReaderActivity) getActivity()).setLastWebViewPosition(mScrollY);
     }
@@ -524,9 +552,7 @@ public class EPubPageFragment extends Fragment {
                     = "file://" + FileUtil.getEpubFolderPath(mEpubFileName) + "/" + opfPath + "//";
             webView.loadDataWithBaseURL(baseUrl, htmlContent, "text/html", "UTF-8", null);
             updatePagesLeftTextBg();
-
         }
-
     }
 
     @Subscribe
@@ -613,18 +639,27 @@ public class EPubPageFragment extends Fragment {
         }
 
         htmlContent = htmlContent.replace("<html ", "<html class=\"" + classes + "\" ");
-        // have to change ....
-//        ArrayList<Highlight> highlights = HighLightTable.getAllHighlights(mBookTitle);
         ArrayList<Highlight> highlights = ((EPubReaderActivity) getActivity()).getAllHighlights(mBookTitle);
+        int count = 0;
         for (Highlight highlight : highlights) {
-            String highlightStr =
+            String highlightStr = highlight.getContentPre() +
                     "<highlight id=\"" + highlight.getHighlightId() +
                             "\" onclick=\"callHighlightURL(this);\" class=\"" +
-                            highlight.getType() + "\">" + highlight.getContent() + "</highlight>";
+                            highlight.getType() + "\">" + highlight.getContent() + "</highlight>"
+                    + highlight.getContentPost();
+
             String searchStr = highlight.getContentPre() +
                     "" + highlight.getContent() + "" + highlight.getContentPost();
-            htmlContent = htmlContent.replaceFirst(searchStr, highlightStr);
+
+            try {
+                htmlContent = htmlContent.replaceFirst(searchStr, highlightStr);
+                count++;
+            } catch (Exception e){
+                e.printStackTrace();
+            }
         }
+        //((EPubReaderActivity) getActivity()).checkHightlightCount(count);
+        //Log.d(TAG,"highlighy count:"+count);
         return htmlContent;
     }
 
@@ -811,6 +846,7 @@ public class EPubPageFragment extends Fragment {
                     HighlightUtil.matchHighlight(html, mHighlightMap.get("id"), mBookTitle, mPosition);
             highlight.setCurrentWebviewScrollPos(mWebview.getScrollY());
             highlight = ((EPubReaderActivity) getActivity()).setCurrentPagerPostion(highlight);
+
             ((EPubReaderActivity) getActivity()).insertHighlight(highlight);
         }
     }
@@ -828,19 +864,15 @@ public class EPubPageFragment extends Fragment {
     @JavascriptInterface
     public void getRemovedHighlightId(String id) {
         if (id != null) {
-            //HighLightTable.deleteHighlight(id);
             ((EPubReaderActivity) getActivity()).deleteHighlight(id);
         }
-        Log.d("EPubPageFragment","call getRemovedHighlightId");
     }
 
     @JavascriptInterface
     public void getUpdatedHighlightId(String id, String style) {
         if (id != null) {
-            //HighLightTable.updateHighlightStyle(id, style);
             ((EPubReaderActivity) getActivity()).updateHighlightStyle(id, style);
         }
-        Log.d("EPubPageFragment","call getUpdatedHighlightId"+style);
     }
 
     public void removeCallback() {
@@ -857,7 +889,6 @@ public class EPubPageFragment extends Fragment {
             mWebview.loadUrl("javascript:alert(rewindCurrentIndex())");
         }
     }
-
 
     private boolean isCurrentFragment() {
         return isAdded() && ((EPubReaderActivity) getActivity()).getmChapterPosition() == mPos;
@@ -882,5 +913,4 @@ public class EPubPageFragment extends Fragment {
             setWebViewPosition(mWebviewposition.getWebviewPos());
         }
     }
-
 }

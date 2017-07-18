@@ -20,9 +20,14 @@ public class EPubPageFragmentAdapter extends FragmentStatePagerAdapter {
     private final String mBookTitle;
     private List<SpineReference> mSpineReferences;
     private String mEpubFileName;
+
     private EPubPageFragment mEPubPageFragment;
     private ArrayList<TextElement> mTextElementArrayList;
     private boolean mIsSmileAvailable;
+
+    public EPubPageFragment getEPubPageFragment() {
+        return mEPubPageFragment;
+    }
 
     public EPubPageFragmentAdapter(FragmentManager fm, List<SpineReference> spineReferences,
                                    String bookTitle, String epubFilename) {

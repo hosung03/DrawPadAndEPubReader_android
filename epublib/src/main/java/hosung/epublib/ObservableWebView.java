@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -75,7 +76,7 @@ public class ObservableWebView extends WebView {
         final boolean[] mMoveOccured = new boolean[1];
         final float[] mDownPosX = new float[1];
         final float[] mDownPosY = new float[1];
-        // Log.d("dispatchTouchEvent","dispatch touch event");
+        Log.d("dispatchTouchEvent","dispatch touch event");
         final float MOVE_THRESHOLD_DP = 20 * getResources().getDisplayMetrics().density;
         mActivityCallback = (EPubReaderActivity) getContext();
         final int action = event.getAction();

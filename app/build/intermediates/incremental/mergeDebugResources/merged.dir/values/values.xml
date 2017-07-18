@@ -922,7 +922,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <!--<item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>-->
+        
         <item name="android:actionBarWidgetTheme">@style/PopupMenuTextView</item>
         <item name="android:popupMenuStyle">@style/PopupMenu</item>
 

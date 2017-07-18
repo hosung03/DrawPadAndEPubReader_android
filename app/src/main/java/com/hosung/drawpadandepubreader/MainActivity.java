@@ -156,7 +156,10 @@ public class MainActivity extends AppCompatActivity {
             realm = null;
         }
 
-        MainActivity.logoff();
+        SyncUser user = SyncUser.currentUser();
+        if (user != null) {
+            user.logout();
+        }
 
         finish();
         System.exit(0);

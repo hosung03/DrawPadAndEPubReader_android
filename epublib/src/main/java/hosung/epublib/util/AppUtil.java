@@ -46,7 +46,9 @@ import static hosung.epublib.util.SharedPreferenceUtil.getSharedPreferencesStrin
 
 /**
  * Created by mahavir on 5/7/16.
+ * Modifed by Hosung on 7/15/17
  */
+
 public class AppUtil {
 
    /*private static final ObjectMapper jsonMapper;*/
@@ -69,10 +71,11 @@ public class AppUtil {
             JSONObject jObject = jsonArray.getJSONObject(0);
             Iterator<?> keys = jObject.keys();
 
-                keys.hasNext();
+            while(keys.hasNext()) {
                 String key = (String)keys.next();
                 String value = jObject.getString(key);
                 map.put(key, value);
+            }
 
         } catch (JSONException e) {
             e.printStackTrace();
