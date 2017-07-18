@@ -1,12 +1,12 @@
-# DrawPadAndEPubReader_android (under developing)
+# DrawPadAndEPubReader_android 
 
 ## Features
 
 This is my personal project for implementing an Android application with several features like
 - Drawing Pad
-- EPub Reader (it will be added soon)
+- EPub Reader 
 - Mobile Database
-- Realtime Synchronization
+- Realtime Synchronization (Drawing Lines and EPub Hightlights)
 
 A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Synchronization. 
 
@@ -51,3 +51,5 @@ A Realm soultion (https://realm.io) was used for Mobile Database and Realtime Sy
 - Realm-Draw (https://github.com/realm/realm-java)
 - Color Picker (https://github.com/kristiyanP/colorpicker)
 - RecyclerView (https://github.com/luizgrp/SectionedRecyclerViewAdapter)
+- EPub (https://github.com/FolioReader/FolioReader-Android)
+
