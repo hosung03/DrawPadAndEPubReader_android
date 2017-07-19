@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_font.png",
-        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_font.png"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_action_discard.png",
         "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_action_discard.png"
     },
@@ -42,10 +38,6 @@
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_star_half_black_16dp.png",
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/drawable-xhdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/man_speech_icon.png",
-        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/man_speech_icon.png"
     },
     {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
@@ -188,10 +180,6 @@
         "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/prev_con.png"
     },
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_font_new.png",
-        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_font_new.png"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -272,10 +260,6 @@
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_close_green.png",
-        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_close_green.png"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png",
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
@@ -320,19 +304,7 @@
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_highlight.png",
-        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_highlight.png"
-    },
-    {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_close.png",
-        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_close.png"
-    },
-    {
         "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png",
         "source": "/Users/mac/.android/build-cache/e6e684686a3ee1c0152a589650e9574465d52950/output/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_drawer.png",
-        "source": "/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/epublib/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_drawer.png"
     }
 ]
