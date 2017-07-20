@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jul 19 18:45:51 EDT 2017
+#Thu Jul 20 10:14:35 EDT 2017
 20.base=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 143.base=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 439.set=ANDROID_RESOURCE

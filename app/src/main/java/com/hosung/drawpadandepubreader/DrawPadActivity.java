@@ -247,9 +247,9 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
                 currentPath = realm.createObject(DrawPath.class);
                 currentNote.getPaths().add(currentPath);
                 if (!drawMode)
-                    currentPath.setColor(Color.WHITE);
+                    currentPath.setColor(getColorString(Color.WHITE));
                 else
-                    currentPath.setColor(currentColor);
+                    currentPath.setColor(getColorString(currentColor));
                 currentPath.setBushsize(currentBushSize);
                 DrawPoint point = realm.createObject(DrawPoint.class);
                 point.setX(pointX);
@@ -426,7 +426,7 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
                             if(currentBitmap!=null) canvas.drawBitmap(currentBitmap, (float)0, (float)0, paint);
                             for (DrawPath drawPath : paths) {
                                 final RealmList<DrawPoint> points = drawPath.getPoints();
-                                final Integer color = new Integer(drawPath.getColor());
+                                final Integer color = new Integer(Color.parseColor(drawPath.getColor()));
                                 if (color != null) {
                                     paint.setColor(color);
                                 } else {
@@ -484,7 +484,6 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
             }
         }
         colorPicker.setDefaultColorButton(currentColor);
-//        colorPicker.setOnChooseColorListener(new ColorPicker.OnChooseColorListener() {
         colorPicker.setOnFastChooseColorListener(new ColorPicker.OnFastChooseColorListener() {
             @Override
             public void setOnFastChooseColorListener(int position, int color) {
@@ -652,5 +651,9 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
         } else {
             return null;
         }
+    }
+
+    public static String getColorString(Integer color){
+        return String.format("#%06X", 0xFFFFFF & color);
     }
 }

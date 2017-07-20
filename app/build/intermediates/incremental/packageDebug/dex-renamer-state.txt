@@ -1,4 +1,4 @@
-#Wed Jul 19 18:45:49 EDT 2017
+#Thu Jul 20 10:14:33 EDT 2017
 base.0=/GitHub/DrawPadAndEPubReader/DrawPadAndEPubReader_android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b336bcdcfff72ed6d2f1c12109794768c5b65b91
 renamed.1=classes2.dex
 renamed.0=classes.dex

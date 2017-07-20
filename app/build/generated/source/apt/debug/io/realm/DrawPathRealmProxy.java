@@ -43,7 +43,7 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
             super(5);
             this.savedIndex = addColumnDetails(table, "saved", RealmFieldType.BOOLEAN);
             this.completedIndex = addColumnDetails(table, "completed", RealmFieldType.BOOLEAN);
-            this.colorIndex = addColumnDetails(table, "color", RealmFieldType.INTEGER);
+            this.colorIndex = addColumnDetails(table, "color", RealmFieldType.STRING);
             this.bushsizeIndex = addColumnDetails(table, "bushsize", RealmFieldType.INTEGER);
             this.pointsIndex = addColumnDetails(table, "points", RealmFieldType.LIST);
         }
@@ -148,16 +148,13 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
 
     @Override
     @SuppressWarnings("cast")
-    public Integer realmGet$color() {
+    public String realmGet$color() {
         proxyState.getRealm$realm().checkIfValid();
-        if (proxyState.getRow$realm().isNull(columnInfo.colorIndex)) {
-            return null;
-        }
-        return (int) proxyState.getRow$realm().getLong(columnInfo.colorIndex);
+        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.colorIndex);
     }
 
     @Override
-    public void realmSet$color(Integer value) {
+    public void realmSet$color(String value) {
         if (proxyState.isUnderConstruction()) {
             if (!proxyState.getAcceptDefaultValue$realm()) {
                 return;
@@ -167,7 +164,7 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
                 row.getTable().setNull(columnInfo.colorIndex, row.getIndex(), true);
                 return;
             }
-            row.getTable().setLong(columnInfo.colorIndex, row.getIndex(), value, true);
+            row.getTable().setString(columnInfo.colorIndex, row.getIndex(), value, true);
             return;
         }
 
@@ -176,7 +173,7 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
             proxyState.getRow$realm().setNull(columnInfo.colorIndex);
             return;
         }
-        proxyState.getRow$realm().setLong(columnInfo.colorIndex, value);
+        proxyState.getRow$realm().setString(columnInfo.colorIndex, value);
     }
 
     @Override
@@ -270,7 +267,7 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
             RealmObjectSchema realmObjectSchema = realmSchema.create("DrawPath");
             realmObjectSchema.add("saved", RealmFieldType.BOOLEAN, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
             realmObjectSchema.add("completed", RealmFieldType.BOOLEAN, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
-            realmObjectSchema.add("color", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
+            realmObjectSchema.add("color", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
             realmObjectSchema.add("bushsize", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
             if (!realmSchema.contains("DrawPoint")) {
                 DrawPointRealmProxy.createRealmObjectSchema(realmSchema);
@@ -329,11 +326,11 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
         if (!columnTypes.containsKey("color")) {
             throw new RealmMigrationNeededException(sharedRealm.getPath(), "Missing field 'color' in existing Realm file. Either remove field or migrate using io.realm.internal.Table.addColumn().");
         }
-        if (columnTypes.get("color") != RealmFieldType.INTEGER) {
-            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Invalid type 'Integer' for field 'color' in existing Realm file.");
+        if (columnTypes.get("color") != RealmFieldType.STRING) {
+            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Invalid type 'String' for field 'color' in existing Realm file.");
         }
         if (!table.isColumnNullable(columnInfo.colorIndex)) {
-            throw new RealmMigrationNeededException(sharedRealm.getPath(),"Field 'color' does not support null values in the existing Realm file. Either set @Required, use the primitive type for field 'color' or migrate using RealmObjectSchema.setNullable().");
+            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field 'color' is required. Either set @Required to field 'color' or migrate using RealmObjectSchema.setNullable().");
         }
         if (!columnTypes.containsKey("bushsize")) {
             throw new RealmMigrationNeededException(sharedRealm.getPath(), "Missing field 'bushsize' in existing Realm file. Either remove field or migrate using io.realm.internal.Table.addColumn().");
@@ -395,7 +392,7 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
             if (json.isNull("color")) {
                 ((DrawPathRealmProxyInterface) obj).realmSet$color(null);
             } else {
-                ((DrawPathRealmProxyInterface) obj).realmSet$color((int) json.getInt("color"));
+                ((DrawPathRealmProxyInterface) obj).realmSet$color((String) json.getString("color"));
             }
         }
         if (json.has("bushsize")) {
@@ -448,7 +445,7 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
                     reader.skipValue();
                     ((DrawPathRealmProxyInterface) obj).realmSet$color(null);
                 } else {
-                    ((DrawPathRealmProxyInterface) obj).realmSet$color((int) reader.nextInt());
+                    ((DrawPathRealmProxyInterface) obj).realmSet$color((String) reader.nextString());
                 }
             } else if (name.equals("bushsize")) {
                 if (reader.peek() == JsonToken.NULL) {
@@ -537,9 +534,9 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
         cache.put(object, rowIndex);
         Table.nativeSetBoolean(tableNativePtr, columnInfo.savedIndex, rowIndex, ((DrawPathRealmProxyInterface)object).realmGet$saved(), false);
         Table.nativeSetBoolean(tableNativePtr, columnInfo.completedIndex, rowIndex, ((DrawPathRealmProxyInterface)object).realmGet$completed(), false);
-        Number realmGet$color = ((DrawPathRealmProxyInterface)object).realmGet$color();
+        String realmGet$color = ((DrawPathRealmProxyInterface)object).realmGet$color();
         if (realmGet$color != null) {
-            Table.nativeSetLong(tableNativePtr, columnInfo.colorIndex, rowIndex, realmGet$color.longValue(), false);
+            Table.nativeSetString(tableNativePtr, columnInfo.colorIndex, rowIndex, realmGet$color, false);
         }
         Number realmGet$bushsize = ((DrawPathRealmProxyInterface)object).realmGet$bushsize();
         if (realmGet$bushsize != null) {
@@ -577,9 +574,9 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
                 cache.put(object, rowIndex);
                 Table.nativeSetBoolean(tableNativePtr, columnInfo.savedIndex, rowIndex, ((DrawPathRealmProxyInterface)object).realmGet$saved(), false);
                 Table.nativeSetBoolean(tableNativePtr, columnInfo.completedIndex, rowIndex, ((DrawPathRealmProxyInterface)object).realmGet$completed(), false);
-                Number realmGet$color = ((DrawPathRealmProxyInterface)object).realmGet$color();
+                String realmGet$color = ((DrawPathRealmProxyInterface)object).realmGet$color();
                 if (realmGet$color != null) {
-                    Table.nativeSetLong(tableNativePtr, columnInfo.colorIndex, rowIndex, realmGet$color.longValue(), false);
+                    Table.nativeSetString(tableNativePtr, columnInfo.colorIndex, rowIndex, realmGet$color, false);
                 }
                 Number realmGet$bushsize = ((DrawPathRealmProxyInterface)object).realmGet$bushsize();
                 if (realmGet$bushsize != null) {
@@ -613,9 +610,9 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
         cache.put(object, rowIndex);
         Table.nativeSetBoolean(tableNativePtr, columnInfo.savedIndex, rowIndex, ((DrawPathRealmProxyInterface)object).realmGet$saved(), false);
         Table.nativeSetBoolean(tableNativePtr, columnInfo.completedIndex, rowIndex, ((DrawPathRealmProxyInterface)object).realmGet$completed(), false);
-        Number realmGet$color = ((DrawPathRealmProxyInterface)object).realmGet$color();
+        String realmGet$color = ((DrawPathRealmProxyInterface)object).realmGet$color();
         if (realmGet$color != null) {
-            Table.nativeSetLong(tableNativePtr, columnInfo.colorIndex, rowIndex, realmGet$color.longValue(), false);
+            Table.nativeSetString(tableNativePtr, columnInfo.colorIndex, rowIndex, realmGet$color, false);
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.colorIndex, rowIndex, false);
         }
@@ -658,9 +655,9 @@ public class DrawPathRealmProxy extends com.hosung.drawpadandepubreader.models.D
                 cache.put(object, rowIndex);
                 Table.nativeSetBoolean(tableNativePtr, columnInfo.savedIndex, rowIndex, ((DrawPathRealmProxyInterface)object).realmGet$saved(), false);
                 Table.nativeSetBoolean(tableNativePtr, columnInfo.completedIndex, rowIndex, ((DrawPathRealmProxyInterface)object).realmGet$completed(), false);
-                Number realmGet$color = ((DrawPathRealmProxyInterface)object).realmGet$color();
+                String realmGet$color = ((DrawPathRealmProxyInterface)object).realmGet$color();
                 if (realmGet$color != null) {
-                    Table.nativeSetLong(tableNativePtr, columnInfo.colorIndex, rowIndex, realmGet$color.longValue(), false);
+                    Table.nativeSetString(tableNativePtr, columnInfo.colorIndex, rowIndex, realmGet$color, false);
                 } else {
                     Table.nativeSetNull(tableNativePtr, columnInfo.colorIndex, rowIndex, false);
                 }
