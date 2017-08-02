@@ -1,6 +1,8 @@
 package com.hosung.drawpadandepubreader;
 
 import android.app.Dialog;
+import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +17,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -86,8 +89,14 @@ public class HighlightActivity extends AppCompatActivity {
                 highlight.setHighlightId(ePubHighLight.getHighlightId());
                 highlight.setPage(ePubHighLight.getPage());
                 highlight.setType(ePubHighLight.getType());
-                highlight.setCurrentPagerPostion(ePubHighLight.getCurrentPagerPostion());
-                highlight.setCurrentWebviewScrollPos(ePubHighLight.getCurrentWebviewScrollPos());
+                if(ePubHighLight.getCurrentPagerPostion()!=null)
+                    highlight.setCurrentPagerPostion(ePubHighLight.getCurrentPagerPostion());
+                else
+                    highlight.setCurrentPagerPostion(0);
+                if(ePubHighLight.getCurrentWebviewScrollPos()!=null)
+                    highlight.setCurrentWebviewScrollPos(ePubHighLight.getCurrentWebviewScrollPos());
+                else
+                    highlight.setCurrentWebviewScrollPos(0);
                 highlight.setNote(ePubHighLight.getNote());
 
                 highlights.add(highlight);
@@ -107,6 +116,7 @@ public class HighlightActivity extends AppCompatActivity {
         }
 
         public class HightlightViewHolder extends RecyclerView.ViewHolder {
+            LinearLayout highlightItem;
             TextView txt_hightlight_time;
             UnderlinedTextView txt_hightlight_text;
             TextView txt_hightlight_note;
@@ -115,12 +125,27 @@ public class HighlightActivity extends AppCompatActivity {
 
             public HightlightViewHolder(View view) {
                 super(view);
+
+                highlightItem = (LinearLayout) view.findViewById(R.id.highlightItem);
+
                 txt_hightlight_time = (TextView) view.findViewById(R.id.txt_hightlight_time);
                 txt_hightlight_text = (UnderlinedTextView) view.findViewById(R.id.txt_hightlight_text);
                 txt_hightlight_note = (TextView) view.findViewById(R.id.txt_hightlight_note);
 
                 deleteImg = (ImageView) view.findViewById(R.id.deleteImg);
                 editnoteImg = (ImageView) view.findViewById(R.id.editnoteImg);
+
+                highlightItem.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int i = (int) view.getTag();
+                        Highlight highlight = highlights.get(i);
+                        Intent intent = new Intent();
+                        intent.putExtra("highlight_selected", (Parcelable) highlight);
+                        setResult(RESULT_OK, intent);
+                        finish();
+                    }
+                });
             }
         }
 
@@ -138,6 +163,8 @@ public class HighlightActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(HightlightViewHolder hightlightViewHolder, final int i) {
+            hightlightViewHolder.highlightItem.setTag(i);
+
             hightlightViewHolder.txt_hightlight_text.setText(highlights.get(i).getContent());
             hightlightViewHolder.txt_hightlight_time.setText(AppUtil.formatDate(highlights.get(i).getDate()));
             hightlightViewHolder.txt_hightlight_note.setText(highlights.get(i).getNote());

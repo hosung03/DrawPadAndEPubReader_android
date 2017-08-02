@@ -46,7 +46,7 @@ public class EPubReaderActivity extends AppCompatActivity implements
         SD_CARD
     }
 
-    private DirectionalViewpager mEPubPageViewPager;
+    protected DirectionalViewpager mEPubPageViewPager;
     private EpubSourceType mEpubSourceType;
     private String mEpubFilePath;
     private String mEpubFileName;

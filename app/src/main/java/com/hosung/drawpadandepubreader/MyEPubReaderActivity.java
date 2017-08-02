@@ -18,11 +18,14 @@ import java.util.Locale;
 import hosung.epublib.EPubReaderActivity;
 import hosung.epublib.model.Highlight;
 import hosung.epublib.model.ReloadData;
+import hosung.epublib.model.WebViewPosition;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
 public class MyEPubReaderActivity extends EPubReaderActivity {
     private static final String TAG = "MyEPubReaderActivity";
+    public static final int ACTION_HIGHLIGHT = 1;
+
     private Handler mHandler;
     private Runnable mHandlerTask;
     public int curHighlightNo = 0;
@@ -51,7 +54,7 @@ public class MyEPubReaderActivity extends EPubReaderActivity {
                     mHandler.postDelayed(mHandlerTask, 1000*30);  // 20 second delay
                     return;
                 }
-
+                Log.d(TAG,"startTask");
                 Realm realm = Realm.getDefaultInstance();
                 RealmResults<EPubHighLight> results
                         = realm.where(EPubHighLight.class).equalTo("bookId",mBook.getTitle()).findAll();
@@ -138,8 +141,14 @@ public class MyEPubReaderActivity extends EPubReaderActivity {
                 highlight.setHighlightId(ePubHighLight.getHighlightId());
                 highlight.setPage(ePubHighLight.getPage());
                 highlight.setType(ePubHighLight.getType());
-                highlight.setCurrentPagerPostion(ePubHighLight.getCurrentPagerPostion());
-                highlight.setCurrentWebviewScrollPos(ePubHighLight.getCurrentWebviewScrollPos());
+                if(ePubHighLight.getCurrentPagerPostion()!=null)
+                    highlight.setCurrentPagerPostion(ePubHighLight.getCurrentPagerPostion());
+                else
+                    highlight.setCurrentPagerPostion(0);
+                if(ePubHighLight.getCurrentWebviewScrollPos()!=null)
+                    highlight.setCurrentWebviewScrollPos(ePubHighLight.getCurrentWebviewScrollPos());
+                else
+                    highlight.setCurrentWebviewScrollPos(0);
                 highlight.setNote(ePubHighLight.getNote());
 
                 highlights.add(highlight);
@@ -215,7 +224,27 @@ public class MyEPubReaderActivity extends EPubReaderActivity {
     public void viewHighLightList(String bookId){
         Intent intent = new Intent(MyEPubReaderActivity.this, HighlightActivity.class);
         intent.putExtra("BookID", bookId);
-        startActivity(intent);
+        //startActivity(intent);
+        startActivityForResult(intent, ACTION_HIGHLIGHT);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == ACTION_HIGHLIGHT && resultCode == RESULT_OK) {
+            Highlight highlight = data.getParcelableExtra("highlight_selected");
+            if (highlight != null) {
+
+                // it made through iOS devices.
+                if(highlight.getCurrentPagerPostion()==0 && highlight.getCurrentWebviewScrollPos()==0)
+                    return;
+
+                int position = highlight.getCurrentPagerPostion();
+                mEPubPageViewPager.setCurrentItem(position);
+                WebViewPosition webViewPosition = new WebViewPosition();
+                webViewPosition.setWebviewPos(highlight.getCurrentWebviewScrollPos());
+                BUS.post(webViewPosition);
+            }
+        }
     }
 
     public static String getDateTimeString(Date date) {

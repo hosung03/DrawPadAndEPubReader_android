@@ -78,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         // for test
-         MainActivity.setRrealmServerIP("10.51.205.175");
+         MainActivity.setRrealmServerIP("10.20.221.23");
          emailText.setText("test@localhost.io");
          passwordText.setText("1234");
     }
