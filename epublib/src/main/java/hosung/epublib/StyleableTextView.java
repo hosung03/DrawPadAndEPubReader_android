@@ -6,6 +6,9 @@ import android.util.AttributeSet;
 
 import hosung.epublib.util.UiUtil;
 
+/**
+ * Created by FolioReader (https://github.com/FolioReader/FolioReader-Android)
+ */
 
 public class StyleableTextView extends AppCompatTextView {
 

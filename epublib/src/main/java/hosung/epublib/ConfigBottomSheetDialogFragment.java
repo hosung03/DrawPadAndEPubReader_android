@@ -18,6 +18,10 @@ import android.widget.TextView;
 
 import hosung.epublib.model.ReloadData;
 
+/**
+ * Created by FolioReader (https://github.com/FolioReader/FolioReader-Android)
+ */
+
 public class ConfigBottomSheetDialogFragment extends BottomSheetDialogFragment implements View.OnClickListener {
 
     public static final int DAY_BUTTON = 30;

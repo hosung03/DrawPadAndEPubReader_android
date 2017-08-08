@@ -35,6 +35,11 @@ import nl.siegmann.epublib.domain.Book;
 import nl.siegmann.epublib.domain.SpineReference;
 import nl.siegmann.epublib.domain.TOCReference;
 
+/**
+ * Created by FolioReader (https://github.com/FolioReader/FolioReader-Android)
+ * Modified by Hosung, Lee on 2017. 6. 19..
+ */
+
 public class EPubReaderActivity extends AppCompatActivity implements
         EPubPageFragment.EPubPageFragmentCallback, ConfigBottomSheetDialogFragment.ConfigDialogCallback {
     private static final String TAG = "EPubReaderActivity";

@@ -32,6 +32,11 @@ import hosung.epublib.util.AppUtil;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
+/**
+ * Created by Hosung, Lee on 2017. 7. 20..
+ * This is a Highlight List Activity class
+ */
+
 public class HighlightActivity extends AppCompatActivity {
     private String mBookId;
     private ArrayList<Highlight> highlights = new ArrayList<>();

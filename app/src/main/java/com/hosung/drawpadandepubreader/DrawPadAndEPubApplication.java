@@ -15,6 +15,8 @@ public class DrawPadAndEPubApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        // Realm initalize
         Realm.init(this);
     }
 }

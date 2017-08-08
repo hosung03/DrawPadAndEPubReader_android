@@ -6,6 +6,9 @@ import io.realm.annotations.Required;
 
 /**
  * Created by Hosung, Lee on 2017. 7. 4..
+ * This is a data model object of Realm Mobile Database
+ * This Object stores Highlights' data of EPub reader
+ * https://realm.io/docs/data-model/
  */
 
 public class EPubHighLight extends RealmObject {

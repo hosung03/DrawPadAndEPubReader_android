@@ -21,6 +21,9 @@ import io.realm.RealmObject;
 
 /**
  * Created by Hosung, Lee on 2017. 5. 30..
+ * This is a data model object of Realm Mobile Database
+ * This Object stores Drawing Lines (Paths)
+ * https://realm.io/docs/data-model/
  */
 
 public class DrawPath extends RealmObject {

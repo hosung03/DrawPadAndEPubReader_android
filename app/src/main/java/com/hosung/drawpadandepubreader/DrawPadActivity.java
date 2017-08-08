@@ -54,6 +54,7 @@ import io.realm.RealmList;
 
 /**
  * Created by Hosung, Lee on 2017. 5. 23..
+ * This is a data model object of Realm Mobile Database
  */
 
 public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.Callback, View.OnClickListener {
@@ -114,6 +115,7 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
 
         realm = Realm.getDefaultInstance();            
         currentNoteId = getIntent().getIntExtra("NoteID", 0);
@@ -223,6 +225,7 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
         }
     }
 
+    // Making Draw Line and Draw Points
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         if (realm == null) {
@@ -350,6 +353,7 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
         outState.putParcelable("BitmapImage", currentBitmap);
     }
 
+    // change Background
     public void setBackgroundUri(Uri uri) {
         if (uri == null) {
             return;
@@ -360,10 +364,10 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
             Bitmap resized = Bitmap.createScaledBitmap(fullsize, (int)padWidth, (int)padHeight, true);
             currentBitmap = resized;
         } catch (IOException exception) {
-            //TODO: How should we handle this exception?
         }
     }
 
+    // Drawing Thread
     class DrawThread extends Thread {
         private int mDrawNoteId = 0;
         private Realm bgRealm;
@@ -414,6 +418,8 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
             bgRealm = Realm.getDefaultInstance();
             final DrawNote resultNote = bgRealm.where(DrawNote.class).equalTo("id", mDrawNoteId).findFirst();
             final RealmList<DrawPath> paths = resultNote.getPaths();
+
+            //
             while (!isInterrupted()) {
                 try {
                     final SurfaceHolder holder = surfaceView.getHolder();
@@ -474,6 +480,7 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
         }
     }
 
+    // view Color Picker Dialog Box
     public void callColorPicker() {
         final ColorPicker colorPicker = new ColorPicker(this);
         if (colorList.size() == 0) {
@@ -499,6 +506,7 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
         colorPicker.show();
     }
 
+    // clear Drawing Lines (Paths) or Points which is not 'saved' state.
     public void clearNote() {
         if (realm != null) {
             if (drawThread != null) {
@@ -523,6 +531,7 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
         }
     }
 
+    // view Brush Size Dialog Box
     public void callBrushSizeDlg() {
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.dlg_brushsize, (ViewGroup) findViewById(R.id.root));
@@ -552,9 +561,11 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
         });
     }
 
+    // save Current Drawing Note and Drawing Lines (Paths).
     public void saveNote() {
         if (currentNote == null) return;
 
+        // It is already a saved Note.
         if(currentNote.isSaved()){
             realm.beginTransaction();
             RealmList<DrawPath> paths = currentNote.getPaths();
@@ -616,7 +627,6 @@ public class DrawPadActivity extends AppCompatActivity implements SurfaceHolder.
             Calendar cal = Calendar.getInstance();
 
             file = new File(path,
-
                     cal.get(Calendar.YEAR) + "_" + (1 + cal.get(Calendar.MONTH)) + "_"
                             + cal.get(Calendar.DAY_OF_MONTH) + "_"
                             + cal.get(Calendar.HOUR_OF_DAY) + "_"

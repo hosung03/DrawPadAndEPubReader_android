@@ -42,7 +42,6 @@ import io.realm.exceptions.RealmException;
  * Created by Hosung, Lee on 2017. 5. 23..
  */
 
-
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final int REQUEST_LOGIN = 0;
@@ -114,9 +113,10 @@ public class MainActivity extends AppCompatActivity {
         lEPubList = getEPubsList();
         if (lDrawNoteList != null) lDrawNoteList = null;
         lDrawNoteList = getDrawNotesList();
-        sectionAdapter.addSection(new ListSection(getString(R.string.epub_list), (List) lEPubList));
-        sectionAdapter.addSection(new ListSection(getString(R.string.drawnote_list), (List) lDrawNoteList));
+        sectionAdapter.addSection(new ListSection(getString(R.string.epub_list), (List) lEPubList)); // EPub List
+        sectionAdapter.addSection(new ListSection(getString(R.string.drawnote_list), (List) lDrawNoteList)); // Draw Note List
 
+        // Recycler View
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.listview);
 
         GridLayoutManager glm = new GridLayoutManager(this, 2);
@@ -133,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
         });
         recyclerView.setLayoutManager(glm);
         recyclerView.setAdapter(sectionAdapter);
-
     }
 
     private void updateList(){
@@ -205,6 +204,7 @@ public class MainActivity extends AppCompatActivity {
         return drawnoteList;
     }
 
+    //
     class ListSection extends StatelessSection {
 
         String title;

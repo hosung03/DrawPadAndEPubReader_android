@@ -22,6 +22,7 @@ import io.realm.SyncUser;
 
 /**
  * Created by Hosung, Lee on 2017. 5. 23..
+ * This is a User Signup Activity class
  */
 
 public class SignupActivity extends AppCompatActivity {

@@ -22,6 +22,11 @@ import hosung.epublib.model.WebViewPosition;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
+/**
+ * Created by Hosung, Lee on 2017. 7. 20..
+ * This is a EPub Reader Activity which is inherited in EPubReaderActivity of EPub Library
+ */
+
 public class MyEPubReaderActivity extends EPubReaderActivity {
     private static final String TAG = "MyEPubReaderActivity";
     public static final int ACTION_HIGHLIGHT = 1;

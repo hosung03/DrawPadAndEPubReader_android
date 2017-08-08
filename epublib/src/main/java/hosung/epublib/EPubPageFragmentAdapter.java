@@ -16,6 +16,7 @@ import nl.siegmann.epublib.domain.SpineReference;
  * Created by mahavir on 4/2/16.
  * Modifed by Hosung, Lee on 6/20/17
  */
+
 public class EPubPageFragmentAdapter extends FragmentStatePagerAdapter {
     private final String mBookTitle;
     private List<SpineReference> mSpineReferences;

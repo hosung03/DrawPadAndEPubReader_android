@@ -22,6 +22,7 @@ import io.realm.SyncUser;
 
 /**
  * Created by Hosung, Lee on 2017. 5. 23..
+ * This is a User Login Activity class
  */
 
 public class LoginActivity extends AppCompatActivity {
@@ -78,14 +79,12 @@ public class LoginActivity extends AppCompatActivity {
 
 
         // for test
-         MainActivity.setRrealmServerIP("10.20.221.23");
-         emailText.setText("test@localhost.io");
-         passwordText.setText("1234");
+        MainActivity.setRrealmServerIP("10.51.205.175");
+        emailText.setText("test@localhost.io");
+        passwordText.setText("1234");
     }
 
     public void login() {
-        Log.d(TAG, "Login");
-
         if (!validate()) {
             //Toast.makeText(getBaseContext(), "Validate Error", Toast.LENGTH_LONG).show();
             return;
@@ -103,6 +102,7 @@ public class LoginActivity extends AppCompatActivity {
 
             MainActivity.logoff();
 
+            // Login Remote Realm Mobile Database
             final SyncCredentials syncCredentials = SyncCredentials.usernamePassword(MainActivity.realmID, MainActivity.realmPasswd);
             final String syncAuthURL = MainActivity.syncAuthURL;
             final String syncServerURL = MainActivity.syncServerURL;

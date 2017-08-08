@@ -13,6 +13,10 @@ import android.view.View;
 import android.webkit.WebView;
 
 
+/**
+ * Created by FolioReader (https://github.com/FolioReader/FolioReader-Android)
+ */
+
 public class ObservableWebView extends WebView {
 
     private ActionMode.Callback mActionModeCallback;
@@ -76,7 +80,7 @@ public class ObservableWebView extends WebView {
         final boolean[] mMoveOccured = new boolean[1];
         final float[] mDownPosX = new float[1];
         final float[] mDownPosY = new float[1];
-        Log.d("dispatchTouchEvent","dispatch touch event");
+        //Log.d("dispatchTouchEvent","dispatch touch event");
         final float MOVE_THRESHOLD_DP = 20 * getResources().getDisplayMetrics().density;
         mActivityCallback = (EPubReaderActivity) getContext();
         final int action = event.getAction();

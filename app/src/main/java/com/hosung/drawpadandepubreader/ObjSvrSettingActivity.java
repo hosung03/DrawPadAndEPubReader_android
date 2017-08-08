@@ -7,6 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/**
+ * Created by Hosung, Lee on 2017. 5. 23..
+ * This is a Realm Object Server Setting Activity class
+ */
+
 public class ObjSvrSettingActivity extends AppCompatActivity {
 
     EditText serverIPText = null;

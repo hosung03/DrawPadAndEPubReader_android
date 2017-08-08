@@ -6,6 +6,10 @@ import android.support.v7.widget.AppCompatSeekBar;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
+/**
+ * Created by FolioReader (https://github.com/FolioReader/FolioReader-Android)
+ */
+
 public class VerticalSeekbar extends AppCompatSeekBar {
 
     public VerticalSeekbar(Context context) {

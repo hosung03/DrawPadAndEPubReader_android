@@ -9,6 +9,10 @@ import android.support.v7.widget.AppCompatTextView;
 import android.text.Layout;
 import android.util.AttributeSet;
 
+/**
+ * Created by FolioReader (https://github.com/FolioReader/FolioReader-Android)
+ */
+
 public class UnderlinedTextView extends AppCompatTextView {
 
     private Rect mRect;
